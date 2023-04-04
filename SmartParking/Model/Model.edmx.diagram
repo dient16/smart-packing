@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0d3eaeb3e54f4437b8d5a5aa5524ce0e" Name="Diagram1">
+        <EntityTypeShape EntityType="SmartParkingModel.Booking" Width="1.5" PointX="6.125" PointY="0.5" />
+        <EntityTypeShape EntityType="SmartParkingModel.Car" Width="1.5" PointX="9.25" PointY="3.875" />
+        <EntityTypeShape EntityType="SmartParkingModel.CheckInOut" Width="1.5" PointX="6.125" PointY="3.875" />
+        <EntityTypeShape EntityType="SmartParkingModel.ParkingSpace" Width="1.5" PointX="3.875" PointY="3.875" />
+        <EntityTypeShape EntityType="SmartParkingModel.Role" Width="1.5" PointX="1.625" PointY="0.875" />
+        <EntityTypeShape EntityType="SmartParkingModel.User" Width="1.5" PointX="3.875" PointY="0.5" />
+        <AssociationConnector Association="SmartParkingModel.FK__Booking__SpaceID__2F10007B" />
+        <AssociationConnector Association="SmartParkingModel.FK__Booking__UserID__2E1BDC42" />
+        <AssociationConnector Association="SmartParkingModel.FK__CheckInOu__CarID__31EC6D26" />
+        <AssociationConnector Association="SmartParkingModel.FK__CheckInOu__Space__32E0915F" />
+        <AssociationConnector Association="SmartParkingModel.FK__Users__RoleID__267ABA7A" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
