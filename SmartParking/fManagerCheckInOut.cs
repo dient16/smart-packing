@@ -28,6 +28,18 @@ namespace SmartParking
             UpdateImageBoxCMP();
             UpdateImageBoxOUT();
         }
+        public static Control GetChildrenControl(string name, Control f)
+
+        {
+            foreach (Control item in f.Controls)
+            {
+                if (item.Name == name)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
         [Obsolete]
         private void kryptonButton1_Click(object sender, EventArgs e)
         {  
@@ -84,7 +96,7 @@ namespace SmartParking
                 MessageBox.Show("Thêm xe vào bãi thành công");
             else
                 MessageBox.Show("Thêm xe vào bãi thất bại");
-            Vacancy.Availability = "Đã đỗ xe";
+            Vacancy.Availability = "Đang đỗ xe";
             pictureBox_LicensePlatesIN.Image.Save(@"LicensePlate\" + car.LicensePlate + ".png", ImageFormat.Png);
             DataProvider.Ins.DB.SaveChanges();
             UpdateImageBoxIN();
@@ -116,10 +128,20 @@ namespace SmartParking
             text_BiensoVAO.Text = "";
             txb_CarId.Text = "";*/
         }
+        string SubDateTime(DateTime time1, DateTime time2)
+        {
+            TimeSpan timeDiff = time1 - time2;
+            string result = string.Format("{0:00}:{1:00}", (int)timeDiff.TotalHours, timeDiff.Minutes);
+            return result;
+        }
         [Obsolete]
         private void kryptonButton2_Click(object sender, EventArgs e)
         {
-            OpenFileDialog dlg = new OpenFileDialog();
+            fInputCardID fInputCardID = new fInputCardID();
+            var txb_SelectcardID = GetChildrenControl("txb_SelectcardID", fInputCardID);
+            GetChildrenControl("btn_Ok", fInputCardID).Click += (senders, ev) => { if (string.IsNullOrEmpty(txb_SelectcardID.Text)) return; fInputCardID.Close(); };
+            fInputCardID.ShowDialog();
+            OpenFileDialog dlg = new OpenFileDialog();   
             dlg.Filter = "Image (*.bmp; *.jpg; *.jpeg; *.png) |*.bmp; *.jpg; *.jpeg; *.png|All files (*.*)|*.*||";
             dlg.InitialDirectory = Application.StartupPath + "\\ImageTest";
             if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.Cancel)
@@ -141,9 +163,53 @@ namespace SmartParking
             pictureBox_miniOUT.Image = temp1;
             pictureBox_LicensePlatesOUT.Image = grayframe;
             picBox_cmpOUT.Image = grayframe;
-            picBox_cmpIN.Image = FindText.ProcessImage(Application.StartupPath + "\\LicensePlate\\" + temp2 + ".png");
+            picBox_cmpIN.Image = FindText.ProcessImage(Application.StartupPath + "\\LicensePlate\\" + temp2 + ".png");         
+                      
+            if (string.IsNullOrEmpty(txb_SelectcardID.Text))
+            {
+                MessageBox.Show("ID thẻ không hợp lệ");
+                return;
+            }
+            else
+            {
+                txb_CarIdOUT.Text = txb_SelectcardID.Text;
+                var checkInOut = HandleDataDB.Ins.GetCheckInOut(Convert.ToInt32(txb_SelectcardID.Text));
+                var TimeCheckOut = DateTime.Now;
+                if (checkInOut != null)
+                {
+                    txt_cpmLicensePlateIN.Text = checkInOut.Car.LicensePlate;
+                    txt_cpmLicensePlateOUT.Text = temp2;
+                    txb_totalCost.Text = checkInOut.TotalCost.ToString();
+                    txt_dayIN.Text = checkInOut.CheckInTime.ToString("dd/mm/yyyy", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                    txt_dayOUT.Text = TimeCheckOut.ToString("dd/mm/yyyy", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                    txt_hourIN.Text = checkInOut.CheckInTime.ToString("hh:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                    txt_hourOUT.Text = TimeCheckOut.ToString("hh:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                    txb_duration.Text = SubDateTime(TimeCheckOut, checkInOut.CheckInTime);
+                    if (!string.Equals(checkInOut.Car.LicensePlate, temp2))
+                    {
+                        txb_message.Text = "BIỂN SỐ KHÁC";
+                        txb_message.StateCommon.Back.Color1 = System.Drawing.Color.Red;
+                        btn_Done.Enabled = false;
+                    }
+                    else
+                    {
+                        btn_Done.Enabled = true;
+                        btn_Done.Click += (senderr, args) =>
+                        {
+                            checkInOut.Status = "Đã xong";
+                            checkInOut.CheckOutTime = TimeCheckOut;
+                            DataProvider.Ins.DB.SaveChanges();
+                            MessageBox.Show("Đã xong");
+                        };
+                    }
+                }
+            }
         }
 
-
+        private void btn_detail_Click(object sender, EventArgs e)
+        {
+            fDetailCheckInOut fDetailCheckInOut = new fDetailCheckInOut();
+            fDetailCheckInOut.ShowDialog();
+        }
     }
 }

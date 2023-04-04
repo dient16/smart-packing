@@ -34,9 +34,7 @@
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel8 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
-            this.pictureBox_LicensePlatesIN = new System.Windows.Forms.PictureBox();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
-            this.pictureBox_miniIN = new System.Windows.Forms.PictureBox();
             this.kryptonPanel10 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
@@ -47,13 +45,10 @@
             this.text_BiensoVAO = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel5 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup6 = new Krypton.Toolkit.KryptonGroup();
-            this.pictureBox_XeVAO = new System.Windows.Forms.PictureBox();
             this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel9 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup5 = new Krypton.Toolkit.KryptonGroup();
-            this.pictureBox_LicensePlatesOUT = new System.Windows.Forms.PictureBox();
             this.kryptonGroup4 = new Krypton.Toolkit.KryptonGroup();
-            this.pictureBox_miniOUT = new System.Windows.Forms.PictureBox();
             this.kryptonPanel11 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
@@ -64,35 +59,43 @@
             this.text_BiensoRA = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel6 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup3 = new Krypton.Toolkit.KryptonGroup();
-            this.pictureBox_XERA = new System.Windows.Forms.PictureBox();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel12 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel13 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonLabel15 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox4 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox2 = new Krypton.Toolkit.KryptonTextBox();
+            this.txb_totalCost = new Krypton.Toolkit.KryptonTextBox();
+            this.txb_duration = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel14 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel13 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel12 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox10 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox11 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox3 = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonTextBox1 = new Krypton.Toolkit.KryptonTextBox();
-            this.btn_login = new Krypton.Toolkit.KryptonButton();
-            this.kryptonTextBox7 = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_dayOUT = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_hourOUT = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_dayIN = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_hourIN = new Krypton.Toolkit.KryptonTextBox();
+            this.btn_Done = new Krypton.Toolkit.KryptonButton();
+            this.txt_cpmLicensePlateOUT = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
-            this.kryptonTextBox9 = new Krypton.Toolkit.KryptonTextBox();
+            this.txt_cpmLicensePlateIN = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel7 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup8 = new Krypton.Toolkit.KryptonGroup();
-            this.picBox_cmpOUT = new System.Windows.Forms.PictureBox();
             this.kryptonGroup7 = new Krypton.Toolkit.KryptonGroup();
-            this.picBox_cmpIN = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kryptonTextBox8 = new Krypton.Toolkit.KryptonTextBox();
+            this.txb_message = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel11 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel10 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonButton4 = new Krypton.Toolkit.KryptonButton();
+            this.btn_detail = new Krypton.Toolkit.KryptonButton();
+            this.kryptonButton3 = new Krypton.Toolkit.KryptonButton();
+            this.pictureBox_LicensePlatesIN = new System.Windows.Forms.PictureBox();
+            this.pictureBox_miniIN = new System.Windows.Forms.PictureBox();
+            this.pictureBox_XeVAO = new System.Windows.Forms.PictureBox();
+            this.pictureBox_LicensePlatesOUT = new System.Windows.Forms.PictureBox();
+            this.pictureBox_miniOUT = new System.Windows.Forms.PictureBox();
+            this.pictureBox_XERA = new System.Windows.Forms.PictureBox();
+            this.picBox_cmpOUT = new System.Windows.Forms.PictureBox();
+            this.picBox_cmpIN = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -104,12 +107,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).BeginInit();
             this.kryptonGroup2.Panel.SuspendLayout();
             this.kryptonGroup2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel10)).BeginInit();
             this.kryptonPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
@@ -118,7 +119,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup6.Panel)).BeginInit();
             this.kryptonGroup6.Panel.SuspendLayout();
             this.kryptonGroup6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).BeginInit();
@@ -127,12 +127,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5.Panel)).BeginInit();
             this.kryptonGroup5.Panel.SuspendLayout();
             this.kryptonGroup5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).BeginInit();
             this.kryptonGroup4.Panel.SuspendLayout();
             this.kryptonGroup4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel11)).BeginInit();
             this.kryptonPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
@@ -141,7 +139,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3.Panel)).BeginInit();
             this.kryptonGroup3.Panel.SuspendLayout();
             this.kryptonGroup3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel12)).BeginInit();
@@ -154,11 +151,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup8.Panel)).BeginInit();
             this.kryptonGroup8.Panel.SuspendLayout();
             this.kryptonGroup8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7.Panel)).BeginInit();
             this.kryptonGroup7.Panel.SuspendLayout();
             this.kryptonGroup7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -236,17 +239,6 @@
             this.kryptonGroup2.StateCommon.Border.Width = 2;
             this.kryptonGroup2.TabIndex = 4;
             // 
-            // pictureBox_LicensePlatesIN
-            // 
-            this.pictureBox_LicensePlatesIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_LicensePlatesIN.Image = global::SmartParking.Resource.IMG_Test2;
-            this.pictureBox_LicensePlatesIN.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_LicensePlatesIN.Name = "pictureBox_LicensePlatesIN";
-            this.pictureBox_LicensePlatesIN.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_LicensePlatesIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_LicensePlatesIN.TabIndex = 16;
-            this.pictureBox_LicensePlatesIN.TabStop = false;
-            // 
             // kryptonGroup1
             // 
             this.kryptonGroup1.Location = new System.Drawing.Point(22, 6);
@@ -268,17 +260,6 @@
             this.kryptonGroup1.StateCommon.Border.Width = 2;
             this.kryptonGroup1.TabIndex = 3;
             // 
-            // pictureBox_miniIN
-            // 
-            this.pictureBox_miniIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_miniIN.Image = global::SmartParking.Resource.IMG_Test1;
-            this.pictureBox_miniIN.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_miniIN.Name = "pictureBox_miniIN";
-            this.pictureBox_miniIN.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_miniIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_miniIN.TabIndex = 3;
-            this.pictureBox_miniIN.TabStop = false;
-            // 
             // kryptonPanel10
             // 
             this.kryptonPanel10.Controls.Add(this.kryptonButton1);
@@ -296,9 +277,9 @@
             // kryptonButton1
             // 
             this.kryptonButton1.CornerRoundingRadius = 7F;
-            this.kryptonButton1.Location = new System.Drawing.Point(368, 108);
+            this.kryptonButton1.Location = new System.Drawing.Point(409, 108);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(78, 32);
+            this.kryptonButton1.Size = new System.Drawing.Size(37, 32);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
@@ -315,7 +296,7 @@
             this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton1.TabIndex = 9;
-            this.kryptonButton1.Values.Text = "Test";
+            this.kryptonButton1.Values.Text = "...";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonLabel3
@@ -439,16 +420,6 @@
             this.kryptonGroup6.StateCommon.Border.Width = 2;
             this.kryptonGroup6.TabIndex = 17;
             // 
-            // pictureBox_XeVAO
-            // 
-            this.pictureBox_XeVAO.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_XeVAO.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_XeVAO.Name = "pictureBox_XeVAO";
-            this.pictureBox_XeVAO.Size = new System.Drawing.Size(436, 310);
-            this.pictureBox_XeVAO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_XeVAO.TabIndex = 5;
-            this.pictureBox_XeVAO.TabStop = false;
-            // 
             // kryptonPanel3
             // 
             this.kryptonPanel3.Controls.Add(this.kryptonPanel9);
@@ -494,17 +465,6 @@
             this.kryptonGroup5.StateCommon.Border.Width = 2;
             this.kryptonGroup5.TabIndex = 16;
             // 
-            // pictureBox_LicensePlatesOUT
-            // 
-            this.pictureBox_LicensePlatesOUT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_LicensePlatesOUT.Image = global::SmartParking.Resource.IMG_Test2;
-            this.pictureBox_LicensePlatesOUT.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_LicensePlatesOUT.Name = "pictureBox_LicensePlatesOUT";
-            this.pictureBox_LicensePlatesOUT.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_LicensePlatesOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_LicensePlatesOUT.TabIndex = 5;
-            this.pictureBox_LicensePlatesOUT.TabStop = false;
-            // 
             // kryptonGroup4
             // 
             this.kryptonGroup4.Location = new System.Drawing.Point(19, 6);
@@ -526,17 +486,6 @@
             this.kryptonGroup4.StateCommon.Border.Width = 2;
             this.kryptonGroup4.TabIndex = 15;
             // 
-            // pictureBox_miniOUT
-            // 
-            this.pictureBox_miniOUT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_miniOUT.Image = global::SmartParking.Resource.IMG_Test1;
-            this.pictureBox_miniOUT.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_miniOUT.Name = "pictureBox_miniOUT";
-            this.pictureBox_miniOUT.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_miniOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_miniOUT.TabIndex = 4;
-            this.pictureBox_miniOUT.TabStop = false;
-            // 
             // kryptonPanel11
             // 
             this.kryptonPanel11.Controls.Add(this.kryptonButton2);
@@ -554,9 +503,9 @@
             // kryptonButton2
             // 
             this.kryptonButton2.CornerRoundingRadius = 7F;
-            this.kryptonButton2.Location = new System.Drawing.Point(368, 111);
+            this.kryptonButton2.Location = new System.Drawing.Point(412, 111);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(78, 32);
+            this.kryptonButton2.Size = new System.Drawing.Size(34, 32);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
             this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
@@ -573,7 +522,7 @@
             this.kryptonButton2.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton2.TabIndex = 10;
-            this.kryptonButton2.Values.Text = "Test";
+            this.kryptonButton2.Values.Text = "...";
             this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // kryptonLabel4
@@ -697,16 +646,6 @@
             this.kryptonGroup3.StateCommon.Border.Width = 2;
             this.kryptonGroup3.TabIndex = 17;
             // 
-            // pictureBox_XERA
-            // 
-            this.pictureBox_XERA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_XERA.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_XERA.Name = "pictureBox_XERA";
-            this.pictureBox_XERA.Size = new System.Drawing.Size(436, 310);
-            this.pictureBox_XERA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_XERA.TabIndex = 18;
-            this.pictureBox_XERA.TabStop = false;
-            // 
             // kryptonPanel4
             // 
             this.kryptonPanel4.Controls.Add(this.kryptonPanel12);
@@ -732,20 +671,20 @@
             // kryptonPanel13
             // 
             this.kryptonPanel13.Controls.Add(this.kryptonLabel15);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox4);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox2);
+            this.kryptonPanel13.Controls.Add(this.txb_totalCost);
+            this.kryptonPanel13.Controls.Add(this.txb_duration);
             this.kryptonPanel13.Controls.Add(this.kryptonLabel14);
             this.kryptonPanel13.Controls.Add(this.kryptonLabel13);
             this.kryptonPanel13.Controls.Add(this.kryptonLabel12);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox10);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox11);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox3);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox1);
-            this.kryptonPanel13.Controls.Add(this.btn_login);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox7);
+            this.kryptonPanel13.Controls.Add(this.txt_dayOUT);
+            this.kryptonPanel13.Controls.Add(this.txt_hourOUT);
+            this.kryptonPanel13.Controls.Add(this.txt_dayIN);
+            this.kryptonPanel13.Controls.Add(this.txt_hourIN);
+            this.kryptonPanel13.Controls.Add(this.btn_Done);
+            this.kryptonPanel13.Controls.Add(this.txt_cpmLicensePlateOUT);
             this.kryptonPanel13.Controls.Add(this.kryptonLabel7);
             this.kryptonPanel13.Controls.Add(this.kryptonLabel9);
-            this.kryptonPanel13.Controls.Add(this.kryptonTextBox9);
+            this.kryptonPanel13.Controls.Add(this.txt_cpmLicensePlateIN);
             this.kryptonPanel13.Location = new System.Drawing.Point(10, 6);
             this.kryptonPanel13.Name = "kryptonPanel13";
             this.kryptonPanel13.Size = new System.Drawing.Size(451, 357);
@@ -763,41 +702,41 @@
             this.kryptonLabel15.TabIndex = 18;
             this.kryptonLabel15.Values.Text = "Phí gửi xe";
             // 
-            // kryptonTextBox4
+            // txb_totalCost
             // 
-            this.kryptonTextBox4.Enabled = false;
-            this.kryptonTextBox4.Location = new System.Drawing.Point(193, 251);
-            this.kryptonTextBox4.Name = "kryptonTextBox4";
-            this.kryptonTextBox4.Size = new System.Drawing.Size(155, 47);
-            this.kryptonTextBox4.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox4.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox4.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox4.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txb_totalCost.Enabled = false;
+            this.txb_totalCost.Location = new System.Drawing.Point(193, 251);
+            this.txb_totalCost.Name = "txb_totalCost";
+            this.txb_totalCost.Size = new System.Drawing.Size(155, 47);
+            this.txb_totalCost.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txb_totalCost.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_totalCost.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_totalCost.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox4.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox4.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox4.StateCommon.Content.Font = new System.Drawing.Font("Poppins ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox4.TabIndex = 17;
-            this.kryptonTextBox4.Text = "50,000 đ";
+            this.txb_totalCost.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txb_totalCost.StateCommon.Border.Rounding = 8F;
+            this.txb_totalCost.StateCommon.Content.Font = new System.Drawing.Font("Poppins ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_totalCost.TabIndex = 17;
+            this.txb_totalCost.Text = "50,000 đ";
             // 
-            // kryptonTextBox2
+            // txb_duration
             // 
-            this.kryptonTextBox2.Enabled = false;
-            this.kryptonTextBox2.Location = new System.Drawing.Point(286, 184);
-            this.kryptonTextBox2.Name = "kryptonTextBox2";
-            this.kryptonTextBox2.Size = new System.Drawing.Size(102, 35);
-            this.kryptonTextBox2.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox2.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txb_duration.Enabled = false;
+            this.txb_duration.Location = new System.Drawing.Point(286, 184);
+            this.txb_duration.Name = "txb_duration";
+            this.txb_duration.Size = new System.Drawing.Size(102, 35);
+            this.txb_duration.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txb_duration.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_duration.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_duration.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox2.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox2.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox2.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox2.TabIndex = 16;
-            this.kryptonTextBox2.Text = "3 giờ 33 phút";
+            this.txb_duration.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txb_duration.StateCommon.Border.Rounding = 8F;
+            this.txb_duration.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_duration.TabIndex = 16;
+            this.txb_duration.Text = "3 giờ 33 phút";
             // 
             // kryptonLabel14
             // 
@@ -832,119 +771,119 @@
             this.kryptonLabel12.TabIndex = 13;
             this.kryptonLabel12.Values.Text = "Thời gian vào";
             // 
-            // kryptonTextBox10
+            // txt_dayOUT
             // 
-            this.kryptonTextBox10.Enabled = false;
-            this.kryptonTextBox10.Location = new System.Drawing.Point(354, 117);
-            this.kryptonTextBox10.Name = "kryptonTextBox10";
-            this.kryptonTextBox10.Size = new System.Drawing.Size(87, 35);
-            this.kryptonTextBox10.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox10.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox10.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox10.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_dayOUT.Enabled = false;
+            this.txt_dayOUT.Location = new System.Drawing.Point(354, 117);
+            this.txt_dayOUT.Name = "txt_dayOUT";
+            this.txt_dayOUT.Size = new System.Drawing.Size(87, 35);
+            this.txt_dayOUT.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_dayOUT.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_dayOUT.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_dayOUT.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox10.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox10.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox10.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox10.TabIndex = 12;
-            this.kryptonTextBox10.Text = "02/04/2023";
+            this.txt_dayOUT.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txt_dayOUT.StateCommon.Border.Rounding = 8F;
+            this.txt_dayOUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dayOUT.TabIndex = 12;
+            this.txt_dayOUT.Text = "02/04/2023";
             // 
-            // kryptonTextBox11
+            // txt_hourOUT
             // 
-            this.kryptonTextBox11.Enabled = false;
-            this.kryptonTextBox11.Location = new System.Drawing.Point(286, 117);
-            this.kryptonTextBox11.Name = "kryptonTextBox11";
-            this.kryptonTextBox11.Size = new System.Drawing.Size(62, 35);
-            this.kryptonTextBox11.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox11.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox11.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox11.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_hourOUT.Enabled = false;
+            this.txt_hourOUT.Location = new System.Drawing.Point(286, 117);
+            this.txt_hourOUT.Name = "txt_hourOUT";
+            this.txt_hourOUT.Size = new System.Drawing.Size(62, 35);
+            this.txt_hourOUT.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_hourOUT.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hourOUT.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hourOUT.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox11.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox11.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox11.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox11.TabIndex = 11;
-            this.kryptonTextBox11.Text = "11:40:01";
+            this.txt_hourOUT.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txt_hourOUT.StateCommon.Border.Rounding = 8F;
+            this.txt_hourOUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hourOUT.TabIndex = 11;
+            this.txt_hourOUT.Text = "11:40:01";
             // 
-            // kryptonTextBox3
+            // txt_dayIN
             // 
-            this.kryptonTextBox3.Enabled = false;
-            this.kryptonTextBox3.Location = new System.Drawing.Point(354, 46);
-            this.kryptonTextBox3.Name = "kryptonTextBox3";
-            this.kryptonTextBox3.Size = new System.Drawing.Size(87, 35);
-            this.kryptonTextBox3.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox3.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox3.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_dayIN.Enabled = false;
+            this.txt_dayIN.Location = new System.Drawing.Point(354, 46);
+            this.txt_dayIN.Name = "txt_dayIN";
+            this.txt_dayIN.Size = new System.Drawing.Size(87, 35);
+            this.txt_dayIN.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_dayIN.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_dayIN.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_dayIN.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox3.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox3.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox3.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox3.TabIndex = 10;
-            this.kryptonTextBox3.Text = "02/04/2023";
+            this.txt_dayIN.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txt_dayIN.StateCommon.Border.Rounding = 8F;
+            this.txt_dayIN.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dayIN.TabIndex = 10;
+            this.txt_dayIN.Text = "02/04/2023";
             // 
-            // kryptonTextBox1
+            // txt_hourIN
             // 
-            this.kryptonTextBox1.Enabled = false;
-            this.kryptonTextBox1.Location = new System.Drawing.Point(286, 46);
-            this.kryptonTextBox1.Name = "kryptonTextBox1";
-            this.kryptonTextBox1.Size = new System.Drawing.Size(62, 35);
-            this.kryptonTextBox1.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox1.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_hourIN.Enabled = false;
+            this.txt_hourIN.Location = new System.Drawing.Point(286, 46);
+            this.txt_hourIN.Name = "txt_hourIN";
+            this.txt_hourIN.Size = new System.Drawing.Size(62, 35);
+            this.txt_hourIN.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_hourIN.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hourIN.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_hourIN.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox1.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox1.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox1.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox1.TabIndex = 9;
-            this.kryptonTextBox1.Text = "11:40:01";
+            this.txt_hourIN.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txt_hourIN.StateCommon.Border.Rounding = 8F;
+            this.txt_hourIN.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hourIN.TabIndex = 9;
+            this.txt_hourIN.Text = "11:40:01";
             // 
-            // btn_login
+            // btn_Done
             // 
-            this.btn_login.CornerRoundingRadius = 7F;
-            this.btn_login.Location = new System.Drawing.Point(89, 313);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(286, 32);
-            this.btn_login.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
-            this.btn_login.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_login.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
-            this.btn_login.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
-            this.btn_login.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_Done.CornerRoundingRadius = 7F;
+            this.btn_Done.Location = new System.Drawing.Point(89, 313);
+            this.btn_Done.Name = "btn_Done";
+            this.btn_Done.Size = new System.Drawing.Size(286, 32);
+            this.btn_Done.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
+            this.btn_Done.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_Done.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
+            this.btn_Done.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
+            this.btn_Done.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btn_login.StateCommon.Border.Rounding = 7F;
-            this.btn_login.StateCommon.Border.Width = 1;
-            this.btn_login.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.btn_login.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.btn_login.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btn_login.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btn_login.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login.TabIndex = 8;
-            this.btn_login.Values.Text = "Cho ra";
+            this.btn_Done.StateCommon.Border.Rounding = 7F;
+            this.btn_Done.StateCommon.Border.Width = 1;
+            this.btn_Done.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.btn_Done.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.btn_Done.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Done.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_Done.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btn_Done.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Done.TabIndex = 8;
+            this.btn_Done.Values.Text = "Cho ra";
             // 
-            // kryptonTextBox7
+            // txt_cpmLicensePlateOUT
             // 
-            this.kryptonTextBox7.Enabled = false;
-            this.kryptonTextBox7.Location = new System.Drawing.Point(34, 150);
-            this.kryptonTextBox7.Name = "kryptonTextBox7";
-            this.kryptonTextBox7.Size = new System.Drawing.Size(226, 69);
-            this.kryptonTextBox7.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox7.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox7.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox7.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_cpmLicensePlateOUT.Enabled = false;
+            this.txt_cpmLicensePlateOUT.Location = new System.Drawing.Point(34, 150);
+            this.txt_cpmLicensePlateOUT.Name = "txt_cpmLicensePlateOUT";
+            this.txt_cpmLicensePlateOUT.Size = new System.Drawing.Size(226, 69);
+            this.txt_cpmLicensePlateOUT.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_cpmLicensePlateOUT.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_cpmLicensePlateOUT.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_cpmLicensePlateOUT.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox7.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox7.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox7.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox7.TabIndex = 7;
-            this.kryptonTextBox7.Text = "77H156235";
+            this.txt_cpmLicensePlateOUT.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txt_cpmLicensePlateOUT.StateCommon.Border.Rounding = 8F;
+            this.txt_cpmLicensePlateOUT.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cpmLicensePlateOUT.TabIndex = 7;
+            this.txt_cpmLicensePlateOUT.Text = "77H156235";
             // 
             // kryptonLabel7
             // 
@@ -968,30 +907,31 @@
             this.kryptonLabel9.TabIndex = 4;
             this.kryptonLabel9.Values.Text = "Biển số vào";
             // 
-            // kryptonTextBox9
+            // txt_cpmLicensePlateIN
             // 
-            this.kryptonTextBox9.Enabled = false;
-            this.kryptonTextBox9.Location = new System.Drawing.Point(34, 45);
-            this.kryptonTextBox9.Name = "kryptonTextBox9";
-            this.kryptonTextBox9.Size = new System.Drawing.Size(226, 69);
-            this.kryptonTextBox9.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.kryptonTextBox9.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox9.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.kryptonTextBox9.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txt_cpmLicensePlateIN.Enabled = false;
+            this.txt_cpmLicensePlateIN.Location = new System.Drawing.Point(34, 45);
+            this.txt_cpmLicensePlateIN.Name = "txt_cpmLicensePlateIN";
+            this.txt_cpmLicensePlateIN.Size = new System.Drawing.Size(226, 69);
+            this.txt_cpmLicensePlateIN.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_cpmLicensePlateIN.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_cpmLicensePlateIN.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txt_cpmLicensePlateIN.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox9.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox9.StateCommon.Border.Rounding = 8F;
-            this.kryptonTextBox9.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox9.TabIndex = 3;
-            this.kryptonTextBox9.Text = "77H156235";
+            this.txt_cpmLicensePlateIN.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txt_cpmLicensePlateIN.StateCommon.Border.Rounding = 8F;
+            this.txt_cpmLicensePlateIN.StateCommon.Content.Font = new System.Drawing.Font("Poppins Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_cpmLicensePlateIN.TabIndex = 3;
+            this.txt_cpmLicensePlateIN.Text = "77H156235";
             // 
             // kryptonPanel7
             // 
+            this.kryptonPanel7.Controls.Add(this.btn_detail);
             this.kryptonPanel7.Controls.Add(this.kryptonGroup8);
             this.kryptonPanel7.Controls.Add(this.kryptonGroup7);
             this.kryptonPanel7.Controls.Add(this.pictureBox1);
-            this.kryptonPanel7.Controls.Add(this.kryptonTextBox8);
+            this.kryptonPanel7.Controls.Add(this.txb_message);
             this.kryptonPanel7.Controls.Add(this.kryptonLabel11);
             this.kryptonPanel7.Controls.Add(this.kryptonLabel10);
             this.kryptonPanel7.Controls.Add(this.kryptonLabel8);
@@ -1006,7 +946,7 @@
             // 
             // kryptonGroup8
             // 
-            this.kryptonGroup8.Location = new System.Drawing.Point(257, 156);
+            this.kryptonGroup8.Location = new System.Drawing.Point(269, 174);
             this.kryptonGroup8.Name = "kryptonGroup8";
             // 
             // kryptonGroup8.Panel
@@ -1025,20 +965,9 @@
             this.kryptonGroup8.StateCommon.Border.Width = 2;
             this.kryptonGroup8.TabIndex = 19;
             // 
-            // picBox_cmpOUT
-            // 
-            this.picBox_cmpOUT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picBox_cmpOUT.Image = global::SmartParking.Resource.IMG_Test2;
-            this.picBox_cmpOUT.Location = new System.Drawing.Point(5, 5);
-            this.picBox_cmpOUT.Name = "picBox_cmpOUT";
-            this.picBox_cmpOUT.Size = new System.Drawing.Size(144, 99);
-            this.picBox_cmpOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBox_cmpOUT.TabIndex = 14;
-            this.picBox_cmpOUT.TabStop = false;
-            // 
             // kryptonGroup7
             // 
-            this.kryptonGroup7.Location = new System.Drawing.Point(44, 156);
+            this.kryptonGroup7.Location = new System.Drawing.Point(56, 174);
             this.kryptonGroup7.Name = "kryptonGroup7";
             // 
             // kryptonGroup7.Panel
@@ -1057,6 +986,189 @@
             this.kryptonGroup7.StateCommon.Border.Width = 2;
             this.kryptonGroup7.TabIndex = 17;
             // 
+            // txb_message
+            // 
+            this.txb_message.Enabled = false;
+            this.txb_message.Location = new System.Drawing.Point(123, 79);
+            this.txb_message.Name = "txb_message";
+            this.txb_message.Size = new System.Drawing.Size(286, 51);
+            this.txb_message.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.txb_message.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.txb_message.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.txb_message.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txb_message.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txb_message.StateCommon.Border.Rounding = 0F;
+            this.txb_message.StateCommon.Border.Width = 1;
+            this.txb_message.StateCommon.Content.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_message.StateCommon.Content.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.txb_message.StateDisabled.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txb_message.StateDisabled.Content.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.txb_message.TabIndex = 8;
+            this.txb_message.Text = "BIỂN SỐ GIỐNG";
+            // 
+            // kryptonLabel11
+            // 
+            this.kryptonLabel11.Location = new System.Drawing.Point(36, 50);
+            this.kryptonLabel11.Name = "kryptonLabel11";
+            this.kryptonLabel11.Size = new System.Drawing.Size(74, 24);
+            this.kryptonLabel11.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
+            this.kryptonLabel11.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel11.TabIndex = 14;
+            this.kryptonLabel11.Values.Text = "Đối chiếu";
+            // 
+            // kryptonLabel10
+            // 
+            this.kryptonLabel10.Location = new System.Drawing.Point(279, 154);
+            this.kryptonLabel10.Name = "kryptonLabel10";
+            this.kryptonLabel10.Size = new System.Drawing.Size(109, 24);
+            this.kryptonLabel10.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
+            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel10.TabIndex = 8;
+            this.kryptonLabel10.Values.Text = "Ảnh biển số ra";
+            // 
+            // kryptonLabel8
+            // 
+            this.kryptonLabel8.Location = new System.Drawing.Point(59, 154);
+            this.kryptonLabel8.Name = "kryptonLabel8";
+            this.kryptonLabel8.Size = new System.Drawing.Size(120, 24);
+            this.kryptonLabel8.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
+            this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel8.TabIndex = 12;
+            this.kryptonLabel8.Values.Text = "Ảnh biển số vào";
+            // 
+            // kryptonButton4
+            // 
+            this.kryptonButton4.CornerRoundingRadius = -1F;
+            this.kryptonButton4.Location = new System.Drawing.Point(31, 55);
+            this.kryptonButton4.Name = "kryptonButton4";
+            this.kryptonButton4.Size = new System.Drawing.Size(451, 17);
+            this.kryptonButton4.StateCommon.Back.Color1 = System.Drawing.Color.Cyan;
+            this.kryptonButton4.StateCommon.Back.Color2 = System.Drawing.Color.Aqua;
+            this.kryptonButton4.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonButton4.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.kryptonButton4.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton4.TabIndex = 2;
+            this.kryptonButton4.Values.Text = "Làn vào";
+            // 
+            // btn_detail
+            // 
+            this.btn_detail.CornerRoundingRadius = 7F;
+            this.btn_detail.Location = new System.Drawing.Point(338, 3);
+            this.btn_detail.Name = "btn_detail";
+            this.btn_detail.Size = new System.Drawing.Size(123, 32);
+            this.btn_detail.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btn_detail.StateCommon.Border.Rounding = 7F;
+            this.btn_detail.StateCommon.Border.Width = 1;
+            this.btn_detail.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_detail.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_detail.TabIndex = 20;
+            this.btn_detail.Values.Text = "Chi tiết";
+            this.btn_detail.Click += new System.EventHandler(this.btn_detail_Click);
+            // 
+            // kryptonButton3
+            // 
+            this.kryptonButton3.CornerRoundingRadius = -1F;
+            this.kryptonButton3.Location = new System.Drawing.Point(501, 55);
+            this.kryptonButton3.Name = "kryptonButton3";
+            this.kryptonButton3.Size = new System.Drawing.Size(451, 17);
+            this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.Cyan;
+            this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.Aqua;
+            this.kryptonButton3.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.Black;
+            this.kryptonButton3.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.Black;
+            this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonButton3.TabIndex = 1;
+            this.kryptonButton3.Values.Text = "Làn ra";
+            // 
+            // pictureBox_LicensePlatesIN
+            // 
+            this.pictureBox_LicensePlatesIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_LicensePlatesIN.Image = global::SmartParking.Resource.IMG_Test2;
+            this.pictureBox_LicensePlatesIN.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_LicensePlatesIN.Name = "pictureBox_LicensePlatesIN";
+            this.pictureBox_LicensePlatesIN.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_LicensePlatesIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_LicensePlatesIN.TabIndex = 16;
+            this.pictureBox_LicensePlatesIN.TabStop = false;
+            // 
+            // pictureBox_miniIN
+            // 
+            this.pictureBox_miniIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_miniIN.Image = global::SmartParking.Resource.IMG_Test1;
+            this.pictureBox_miniIN.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_miniIN.Name = "pictureBox_miniIN";
+            this.pictureBox_miniIN.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_miniIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_miniIN.TabIndex = 3;
+            this.pictureBox_miniIN.TabStop = false;
+            // 
+            // pictureBox_XeVAO
+            // 
+            this.pictureBox_XeVAO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_XeVAO.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_XeVAO.Name = "pictureBox_XeVAO";
+            this.pictureBox_XeVAO.Size = new System.Drawing.Size(436, 310);
+            this.pictureBox_XeVAO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_XeVAO.TabIndex = 5;
+            this.pictureBox_XeVAO.TabStop = false;
+            // 
+            // pictureBox_LicensePlatesOUT
+            // 
+            this.pictureBox_LicensePlatesOUT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_LicensePlatesOUT.Image = global::SmartParking.Resource.IMG_Test2;
+            this.pictureBox_LicensePlatesOUT.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_LicensePlatesOUT.Name = "pictureBox_LicensePlatesOUT";
+            this.pictureBox_LicensePlatesOUT.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_LicensePlatesOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_LicensePlatesOUT.TabIndex = 5;
+            this.pictureBox_LicensePlatesOUT.TabStop = false;
+            // 
+            // pictureBox_miniOUT
+            // 
+            this.pictureBox_miniOUT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_miniOUT.Image = global::SmartParking.Resource.IMG_Test1;
+            this.pictureBox_miniOUT.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_miniOUT.Name = "pictureBox_miniOUT";
+            this.pictureBox_miniOUT.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_miniOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_miniOUT.TabIndex = 4;
+            this.pictureBox_miniOUT.TabStop = false;
+            // 
+            // pictureBox_XERA
+            // 
+            this.pictureBox_XERA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_XERA.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_XERA.Name = "pictureBox_XERA";
+            this.pictureBox_XERA.Size = new System.Drawing.Size(436, 310);
+            this.pictureBox_XERA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_XERA.TabIndex = 18;
+            this.pictureBox_XERA.TabStop = false;
+            // 
+            // picBox_cmpOUT
+            // 
+            this.picBox_cmpOUT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBox_cmpOUT.Image = global::SmartParking.Resource.IMG_Test2;
+            this.picBox_cmpOUT.Location = new System.Drawing.Point(5, 5);
+            this.picBox_cmpOUT.Name = "picBox_cmpOUT";
+            this.picBox_cmpOUT.Size = new System.Drawing.Size(144, 99);
+            this.picBox_cmpOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_cmpOUT.TabIndex = 14;
+            this.picBox_cmpOUT.TabStop = false;
+            // 
             // picBox_cmpIN
             // 
             this.picBox_cmpIN.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1071,73 +1183,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SmartParking.Resource.checkIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(72, 42);
+            this.pictureBox1.Location = new System.Drawing.Point(69, 79);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // kryptonTextBox8
-            // 
-            this.kryptonTextBox8.Enabled = false;
-            this.kryptonTextBox8.Location = new System.Drawing.Point(126, 42);
-            this.kryptonTextBox8.Name = "kryptonTextBox8";
-            this.kryptonTextBox8.Size = new System.Drawing.Size(286, 51);
-            this.kryptonTextBox8.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.kryptonTextBox8.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.kryptonTextBox8.StateCommon.Border.Color2 = System.Drawing.Color.Black;
-            this.kryptonTextBox8.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonTextBox8.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.kryptonTextBox8.StateCommon.Border.Rounding = 0F;
-            this.kryptonTextBox8.StateCommon.Border.Width = 1;
-            this.kryptonTextBox8.StateCommon.Content.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonTextBox8.StateCommon.Content.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.kryptonTextBox8.StateDisabled.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonTextBox8.StateDisabled.Content.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.kryptonTextBox8.TabIndex = 8;
-            this.kryptonTextBox8.Text = "BIỂN SỐ GIỐNG";
-            // 
-            // kryptonLabel11
-            // 
-            this.kryptonLabel11.Location = new System.Drawing.Point(39, 13);
-            this.kryptonLabel11.Name = "kryptonLabel11";
-            this.kryptonLabel11.Size = new System.Drawing.Size(74, 24);
-            this.kryptonLabel11.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel11.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
-            this.kryptonLabel11.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel11.TabIndex = 14;
-            this.kryptonLabel11.Values.Text = "Đối chiếu";
-            // 
-            // kryptonLabel10
-            // 
-            this.kryptonLabel10.Location = new System.Drawing.Point(267, 136);
-            this.kryptonLabel10.Name = "kryptonLabel10";
-            this.kryptonLabel10.Size = new System.Drawing.Size(109, 24);
-            this.kryptonLabel10.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel10.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
-            this.kryptonLabel10.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel10.TabIndex = 8;
-            this.kryptonLabel10.Values.Text = "Ảnh biển số ra";
-            // 
-            // kryptonLabel8
-            // 
-            this.kryptonLabel8.Location = new System.Drawing.Point(47, 136);
-            this.kryptonLabel8.Name = "kryptonLabel8";
-            this.kryptonLabel8.Size = new System.Drawing.Size(120, 24);
-            this.kryptonLabel8.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel8.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
-            this.kryptonLabel8.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel8.TabIndex = 12;
-            this.kryptonLabel8.Values.Text = "Ảnh biển số vào";
-            // 
             // fManagerCheckInOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1450, 760);
+            this.Controls.Add(this.kryptonButton4);
+            this.Controls.Add(this.kryptonButton3);
             this.Controls.Add(this.kryptonPanel1);
             this.Name = "fManagerCheckInOut";
             this.Text = "Quản lý gửi xe";
@@ -1153,12 +1212,10 @@
             this.kryptonGroup2.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).EndInit();
             this.kryptonGroup2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
             this.kryptonGroup1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel10)).EndInit();
             this.kryptonPanel10.ResumeLayout(false);
             this.kryptonPanel10.PerformLayout();
@@ -1168,7 +1225,6 @@
             this.kryptonGroup6.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup6)).EndInit();
             this.kryptonGroup6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).EndInit();
@@ -1177,12 +1233,10 @@
             this.kryptonGroup5.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5)).EndInit();
             this.kryptonGroup5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).EndInit();
             this.kryptonGroup4.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).EndInit();
             this.kryptonGroup4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel11)).EndInit();
             this.kryptonPanel11.ResumeLayout(false);
             this.kryptonPanel11.PerformLayout();
@@ -1192,7 +1246,6 @@
             this.kryptonGroup3.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3)).EndInit();
             this.kryptonGroup3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel12)).EndInit();
@@ -1207,11 +1260,17 @@
             this.kryptonGroup8.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup8)).EndInit();
             this.kryptonGroup8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7.Panel)).EndInit();
             this.kryptonGroup7.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7)).EndInit();
             this.kryptonGroup7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -1239,20 +1298,20 @@
         private Krypton.Toolkit.KryptonPanel kryptonPanel12;
         private Krypton.Toolkit.KryptonPanel kryptonPanel13;
         private Krypton.Toolkit.KryptonLabel kryptonLabel9;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox9;
+        private Krypton.Toolkit.KryptonTextBox txt_cpmLicensePlateIN;
         private Krypton.Toolkit.KryptonLabel kryptonLabel7;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox7;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox8;
+        private Krypton.Toolkit.KryptonTextBox txt_cpmLicensePlateOUT;
+        private Krypton.Toolkit.KryptonTextBox txb_message;
         private Krypton.Toolkit.KryptonLabel kryptonLabel11;
         private Krypton.Toolkit.KryptonLabel kryptonLabel10;
         private Krypton.Toolkit.KryptonLabel kryptonLabel8;
-        private Krypton.Toolkit.KryptonButton btn_login;
+        private Krypton.Toolkit.KryptonButton btn_Done;
         private Krypton.Toolkit.KryptonLabel kryptonLabel13;
         private Krypton.Toolkit.KryptonLabel kryptonLabel12;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox10;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox11;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox3;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox1;
+        private Krypton.Toolkit.KryptonTextBox txt_dayOUT;
+        private Krypton.Toolkit.KryptonTextBox txt_hourOUT;
+        private Krypton.Toolkit.KryptonTextBox txt_dayIN;
+        private Krypton.Toolkit.KryptonTextBox txt_hourIN;
         private Krypton.Toolkit.KryptonButton kryptonButton2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel8;
@@ -1281,8 +1340,11 @@
         private Krypton.Toolkit.KryptonGroup kryptonGroup8;
         private System.Windows.Forms.PictureBox picBox_cmpOUT;
         private Krypton.Toolkit.KryptonLabel kryptonLabel15;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox4;
-        private Krypton.Toolkit.KryptonTextBox kryptonTextBox2;
+        private Krypton.Toolkit.KryptonTextBox txb_totalCost;
+        private Krypton.Toolkit.KryptonTextBox txb_duration;
         private Krypton.Toolkit.KryptonLabel kryptonLabel14;
+        private Krypton.Toolkit.KryptonButton kryptonButton4;
+        private Krypton.Toolkit.KryptonButton btn_detail;
+        private Krypton.Toolkit.KryptonButton kryptonButton3;
     }
 }

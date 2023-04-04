@@ -105,5 +105,20 @@ namespace SmartParking.Model
         {
             return DataProvider.Ins.DB.Bookings.Where(x => true).Count();
         }
+        public CheckInOut GetCheckInOut(int idCard)
+        {
+            return DataProvider.Ins.DB.CheckInOuts.FirstOrDefault(x => x.CheckInOutID == idCard);
+        }
+        public ObservableCollection<CheckInOut> GetListCheckInOut()
+        {
+            ObservableCollection<CheckInOut> LS = new ObservableCollection<CheckInOut>();
+            var ConutSpace = DataProvider.Ins.DB.CheckInOuts.Where(x => true).Count();
+            for (int i = 1; i <= ConutSpace; i++)
+            {
+                var space = DataProvider.Ins.DB.CheckInOuts.FirstOrDefault(x => x.SpaceID == i);
+                LS.Add(space);
+            }
+            return LS;
+        }
     }
 }

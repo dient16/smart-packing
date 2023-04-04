@@ -100,6 +100,12 @@
     <Compile Include="fBooking.Designer.cs">
       <DependentUpon>fBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="fInputCardID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fInputCardID.Designer.cs">
+      <DependentUpon>fInputCardID.cs</DependentUpon>
+    </Compile>
     <Compile Include="fParkingSpace.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,12 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\DataProvider.cs" />
+    <Compile Include="Model\fDetailCheckInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\fDetailCheckInOut.Designer.cs">
+      <DependentUpon>fDetailCheckInOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model\HandleDataDB.cs" />
     <Compile Include="Model\Model.Context.cs">
       <AutoGen>True</AutoGen>
@@ -165,6 +177,9 @@
     <EmbeddedResource Include="fBooking.resx">
       <DependentUpon>fBooking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fInputCardID.resx">
+      <DependentUpon>fInputCardID.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fParkingSpace.resx">
       <DependentUpon>fParkingSpace.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fManagerCheckInOut.resx">
       <DependentUpon>fManagerCheckInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\fDetailCheckInOut.resx">
+      <DependentUpon>fDetailCheckInOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
