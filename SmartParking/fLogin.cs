@@ -36,18 +36,21 @@ namespace SmartParking
                     {
                         fAdminManager fAdminManager = new fAdminManager();
                         fAdminManager.ShowDialog();
+                        HandleDataDB.Ins.SetAccount(null);
                         _this.Show();
                     }
                     else if(user.RoleID == 2)
                     {
                         fManagerCheckInOut fParkingManager = new fManagerCheckInOut();
                         fParkingManager.ShowDialog();
+                        HandleDataDB.Ins.SetAccount(null);
                         _this.Show();
                     }
                     else if(user.RoleID == 3)
                     {
                         fParkingSpace fBooking = new fParkingSpace();
                         fBooking.ShowDialog();
+                        HandleDataDB.Ins.SetAccount(null);
                         _this.Show();
                     }
                 }

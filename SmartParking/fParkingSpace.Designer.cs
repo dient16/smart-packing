@@ -30,20 +30,24 @@
         {
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
             this.flp_SpaceA = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
-            this.flp_SpaceB = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonGroup3 = new Krypton.Toolkit.KryptonGroup();
-            this.flp_SpaceC = new System.Windows.Forms.FlowLayoutPanel();
             this.kryptonGroup4 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonGroup5 = new Krypton.Toolkit.KryptonGroup();
+            this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
-            this.kryptonGroup6 = new Krypton.Toolkit.KryptonGroup();
+            this.kryptonGroup3 = new Krypton.Toolkit.KryptonGroup();
+            this.flp_SpaceB = new System.Windows.Forms.FlowLayoutPanel();
+            this.kryptonGroup5 = new Krypton.Toolkit.KryptonGroup();
             this.kryptonButton3 = new Krypton.Toolkit.KryptonButton();
+            this.kryptonGroup6 = new Krypton.Toolkit.KryptonGroup();
+            this.flp_SpaceC = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).BeginInit();
+            this.kryptonGroup4.Panel.SuspendLayout();
+            this.kryptonGroup4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).BeginInit();
             this.kryptonGroup2.Panel.SuspendLayout();
@@ -52,10 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3.Panel)).BeginInit();
             this.kryptonGroup3.Panel.SuspendLayout();
             this.kryptonGroup3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).BeginInit();
-            this.kryptonGroup4.Panel.SuspendLayout();
-            this.kryptonGroup4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5.Panel)).BeginInit();
             this.kryptonGroup5.Panel.SuspendLayout();
@@ -68,62 +68,25 @@
             // 
             // kryptonGroup1
             // 
-            this.kryptonGroup1.Location = new System.Drawing.Point(192, 99);
+            this.kryptonGroup1.Location = new System.Drawing.Point(216, 100);
             this.kryptonGroup1.Name = "kryptonGroup1";
             // 
             // kryptonGroup1.Panel
             // 
             this.kryptonGroup1.Panel.Controls.Add(this.flp_SpaceA);
-            this.kryptonGroup1.Size = new System.Drawing.Size(912, 162);
+            this.kryptonGroup1.Size = new System.Drawing.Size(845, 198);
             this.kryptonGroup1.TabIndex = 0;
             // 
             // flp_SpaceA
             // 
             this.flp_SpaceA.AutoScroll = true;
             this.flp_SpaceA.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flp_SpaceA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flp_SpaceA.Location = new System.Drawing.Point(0, 0);
             this.flp_SpaceA.Name = "flp_SpaceA";
             this.flp_SpaceA.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.flp_SpaceA.Size = new System.Drawing.Size(910, 160);
+            this.flp_SpaceA.Size = new System.Drawing.Size(843, 196);
             this.flp_SpaceA.TabIndex = 2;
-            // 
-            // kryptonGroup2
-            // 
-            this.kryptonGroup2.Location = new System.Drawing.Point(192, 267);
-            this.kryptonGroup2.Name = "kryptonGroup2";
-            // 
-            // kryptonGroup2.Panel
-            // 
-            this.kryptonGroup2.Panel.Controls.Add(this.flp_SpaceB);
-            this.kryptonGroup2.Size = new System.Drawing.Size(912, 162);
-            this.kryptonGroup2.TabIndex = 1;
-            // 
-            // flp_SpaceB
-            // 
-            this.flp_SpaceB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flp_SpaceB.Location = new System.Drawing.Point(0, 0);
-            this.flp_SpaceB.Name = "flp_SpaceB";
-            this.flp_SpaceB.Size = new System.Drawing.Size(910, 160);
-            this.flp_SpaceB.TabIndex = 0;
-            // 
-            // kryptonGroup3
-            // 
-            this.kryptonGroup3.Location = new System.Drawing.Point(192, 435);
-            this.kryptonGroup3.Name = "kryptonGroup3";
-            // 
-            // kryptonGroup3.Panel
-            // 
-            this.kryptonGroup3.Panel.Controls.Add(this.flp_SpaceC);
-            this.kryptonGroup3.Size = new System.Drawing.Size(912, 162);
-            this.kryptonGroup3.TabIndex = 2;
-            // 
-            // flp_SpaceC
-            // 
-            this.flp_SpaceC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flp_SpaceC.Location = new System.Drawing.Point(0, 0);
-            this.flp_SpaceC.Name = "flp_SpaceC";
-            this.flp_SpaceC.Size = new System.Drawing.Size(910, 160);
-            this.flp_SpaceC.TabIndex = 0;
             // 
             // kryptonGroup4
             // 
@@ -133,7 +96,7 @@
             // kryptonGroup4.Panel
             // 
             this.kryptonGroup4.Panel.Controls.Add(this.kryptonButton1);
-            this.kryptonGroup4.Size = new System.Drawing.Size(176, 162);
+            this.kryptonGroup4.Size = new System.Drawing.Size(200, 200);
             this.kryptonGroup4.TabIndex = 3;
             // 
             // kryptonButton1
@@ -142,7 +105,7 @@
             this.kryptonButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonButton1.Location = new System.Drawing.Point(0, 0);
             this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(174, 160);
+            this.kryptonButton1.Size = new System.Drawing.Size(198, 198);
             this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -157,16 +120,16 @@
             this.kryptonButton1.TabIndex = 0;
             this.kryptonButton1.Values.Text = "A";
             // 
-            // kryptonGroup5
+            // kryptonGroup2
             // 
-            this.kryptonGroup5.Location = new System.Drawing.Point(10, 267);
-            this.kryptonGroup5.Name = "kryptonGroup5";
+            this.kryptonGroup2.Location = new System.Drawing.Point(9, 319);
+            this.kryptonGroup2.Name = "kryptonGroup2";
             // 
-            // kryptonGroup5.Panel
+            // kryptonGroup2.Panel
             // 
-            this.kryptonGroup5.Panel.Controls.Add(this.kryptonButton2);
-            this.kryptonGroup5.Size = new System.Drawing.Size(176, 162);
-            this.kryptonGroup5.TabIndex = 4;
+            this.kryptonGroup2.Panel.Controls.Add(this.kryptonButton2);
+            this.kryptonGroup2.Size = new System.Drawing.Size(200, 200);
+            this.kryptonGroup2.TabIndex = 5;
             // 
             // kryptonButton2
             // 
@@ -174,7 +137,7 @@
             this.kryptonButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonButton2.Location = new System.Drawing.Point(0, 0);
             this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(174, 160);
+            this.kryptonButton2.Size = new System.Drawing.Size(198, 198);
             this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -186,19 +149,41 @@
             this.kryptonButton2.StateCommon.Border.Rounding = 5F;
             this.kryptonButton2.StateCommon.Border.Width = 3;
             this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins Black", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 1;
+            this.kryptonButton2.TabIndex = 0;
             this.kryptonButton2.Values.Text = "B";
             // 
-            // kryptonGroup6
+            // kryptonGroup3
             // 
-            this.kryptonGroup6.Location = new System.Drawing.Point(10, 435);
-            this.kryptonGroup6.Name = "kryptonGroup6";
+            this.kryptonGroup3.Location = new System.Drawing.Point(215, 320);
+            this.kryptonGroup3.Name = "kryptonGroup3";
             // 
-            // kryptonGroup6.Panel
+            // kryptonGroup3.Panel
             // 
-            this.kryptonGroup6.Panel.Controls.Add(this.kryptonButton3);
-            this.kryptonGroup6.Size = new System.Drawing.Size(176, 162);
-            this.kryptonGroup6.TabIndex = 5;
+            this.kryptonGroup3.Panel.Controls.Add(this.flp_SpaceB);
+            this.kryptonGroup3.Size = new System.Drawing.Size(845, 198);
+            this.kryptonGroup3.TabIndex = 4;
+            // 
+            // flp_SpaceB
+            // 
+            this.flp_SpaceB.AutoScroll = true;
+            this.flp_SpaceB.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flp_SpaceB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flp_SpaceB.Location = new System.Drawing.Point(0, 0);
+            this.flp_SpaceB.Name = "flp_SpaceB";
+            this.flp_SpaceB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.flp_SpaceB.Size = new System.Drawing.Size(843, 196);
+            this.flp_SpaceB.TabIndex = 2;
+            // 
+            // kryptonGroup5
+            // 
+            this.kryptonGroup5.Location = new System.Drawing.Point(8, 536);
+            this.kryptonGroup5.Name = "kryptonGroup5";
+            // 
+            // kryptonGroup5.Panel
+            // 
+            this.kryptonGroup5.Panel.Controls.Add(this.kryptonButton3);
+            this.kryptonGroup5.Size = new System.Drawing.Size(200, 200);
+            this.kryptonGroup5.TabIndex = 7;
             // 
             // kryptonButton3
             // 
@@ -206,7 +191,7 @@
             this.kryptonButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonButton3.Location = new System.Drawing.Point(0, 0);
             this.kryptonButton3.Name = "kryptonButton3";
-            this.kryptonButton3.Size = new System.Drawing.Size(174, 160);
+            this.kryptonButton3.Size = new System.Drawing.Size(198, 198);
             this.kryptonButton3.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton3.StateCommon.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.kryptonButton3.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
@@ -218,26 +203,52 @@
             this.kryptonButton3.StateCommon.Border.Rounding = 5F;
             this.kryptonButton3.StateCommon.Border.Width = 3;
             this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins Black", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton3.TabIndex = 1;
+            this.kryptonButton3.TabIndex = 0;
             this.kryptonButton3.Values.Text = "C";
             // 
-            // fBooking
+            // kryptonGroup6
+            // 
+            this.kryptonGroup6.Location = new System.Drawing.Point(214, 537);
+            this.kryptonGroup6.Name = "kryptonGroup6";
+            // 
+            // kryptonGroup6.Panel
+            // 
+            this.kryptonGroup6.Panel.Controls.Add(this.flp_SpaceC);
+            this.kryptonGroup6.Size = new System.Drawing.Size(845, 198);
+            this.kryptonGroup6.TabIndex = 6;
+            // 
+            // flp_SpaceC
+            // 
+            this.flp_SpaceC.AutoScroll = true;
+            this.flp_SpaceC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flp_SpaceC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flp_SpaceC.Location = new System.Drawing.Point(0, 0);
+            this.flp_SpaceC.Name = "flp_SpaceC";
+            this.flp_SpaceC.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.flp_SpaceC.Size = new System.Drawing.Size(843, 196);
+            this.flp_SpaceC.TabIndex = 2;
+            // 
+            // fParkingSpace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1121, 633);
-            this.Controls.Add(this.kryptonGroup6);
+            this.ClientSize = new System.Drawing.Size(1100, 762);
             this.Controls.Add(this.kryptonGroup5);
-            this.Controls.Add(this.kryptonGroup4);
-            this.Controls.Add(this.kryptonGroup3);
+            this.Controls.Add(this.kryptonGroup6);
             this.Controls.Add(this.kryptonGroup2);
+            this.Controls.Add(this.kryptonGroup3);
+            this.Controls.Add(this.kryptonGroup4);
             this.Controls.Add(this.kryptonGroup1);
-            this.Name = "fBooking";
+            this.Name = "fParkingSpace";
             this.Text = "fBooking";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
             this.kryptonGroup1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).EndInit();
+            this.kryptonGroup4.Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).EndInit();
+            this.kryptonGroup4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).EndInit();
             this.kryptonGroup2.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).EndInit();
@@ -246,10 +257,6 @@
             this.kryptonGroup3.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3)).EndInit();
             this.kryptonGroup3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).EndInit();
-            this.kryptonGroup4.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).EndInit();
-            this.kryptonGroup4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5.Panel)).EndInit();
             this.kryptonGroup5.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5)).EndInit();
@@ -265,16 +272,16 @@
         #endregion
 
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
-        private Krypton.Toolkit.KryptonGroup kryptonGroup2;
-        private Krypton.Toolkit.KryptonGroup kryptonGroup3;
         private Krypton.Toolkit.KryptonGroup kryptonGroup4;
-        private Krypton.Toolkit.KryptonGroup kryptonGroup5;
-        private Krypton.Toolkit.KryptonGroup kryptonGroup6;
-        private System.Windows.Forms.FlowLayoutPanel flp_SpaceB;
-        private System.Windows.Forms.FlowLayoutPanel flp_SpaceC;
         private Krypton.Toolkit.KryptonButton kryptonButton1;
-        private Krypton.Toolkit.KryptonButton kryptonButton2;
-        private Krypton.Toolkit.KryptonButton kryptonButton3;
         private System.Windows.Forms.FlowLayoutPanel flp_SpaceA;
+        private Krypton.Toolkit.KryptonGroup kryptonGroup2;
+        private Krypton.Toolkit.KryptonButton kryptonButton2;
+        private Krypton.Toolkit.KryptonGroup kryptonGroup3;
+        private System.Windows.Forms.FlowLayoutPanel flp_SpaceB;
+        private Krypton.Toolkit.KryptonGroup kryptonGroup5;
+        private Krypton.Toolkit.KryptonButton kryptonButton3;
+        private Krypton.Toolkit.KryptonGroup kryptonGroup6;
+        private System.Windows.Forms.FlowLayoutPanel flp_SpaceC;
     }
 }

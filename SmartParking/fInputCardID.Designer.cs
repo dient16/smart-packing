@@ -47,6 +47,7 @@
             this.txb_SelectcardID.CustomButton.UseSelectable = true;
             this.txb_SelectcardID.CustomButton.UseStyleColors = true;
             this.txb_SelectcardID.CustomButton.Visible = false;
+            this.txb_SelectcardID.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.txb_SelectcardID.Lines = new string[0];
             this.txb_SelectcardID.Location = new System.Drawing.Point(23, 72);
             this.txb_SelectcardID.MaxLength = 32767;
@@ -57,20 +58,28 @@
             this.txb_SelectcardID.SelectionLength = 0;
             this.txb_SelectcardID.SelectionStart = 0;
             this.txb_SelectcardID.ShortcutsEnabled = true;
-            this.txb_SelectcardID.Size = new System.Drawing.Size(114, 23);
+            this.txb_SelectcardID.Size = new System.Drawing.Size(114, 32);
             this.txb_SelectcardID.TabIndex = 0;
             this.txb_SelectcardID.UseSelectable = true;
             this.txb_SelectcardID.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txb_SelectcardID.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txb_SelectcardID.WaterMarkFont = new System.Drawing.Font("Poppins SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btn_Ok
             // 
+            this.btn_Ok.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btn_Ok.CornerRoundingRadius = -1F;
             this.btn_Ok.Location = new System.Drawing.Point(143, 72);
             this.btn_Ok.Name = "btn_Ok";
-            this.btn_Ok.Size = new System.Drawing.Size(26, 23);
+            this.btn_Ok.Size = new System.Drawing.Size(32, 32);
+            this.btn_Ok.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btn_Ok.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
             this.btn_Ok.StateCommon.Back.Image = global::SmartParking.Resource.checkIcon;
             this.btn_Ok.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Stretch;
+            this.btn_Ok.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.btn_Ok.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btn_Ok.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.btn_Ok.TabIndex = 1;
             this.btn_Ok.Values.Text = "";
             // 

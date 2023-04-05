@@ -29,12 +29,15 @@
         [System.Obsolete]
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fManagerCheckInOut));
             this.kryptonPanel1 = new Krypton.Toolkit.KryptonPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.kryptonPanel2 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel8 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup2 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox_LicensePlatesIN = new System.Windows.Forms.PictureBox();
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox_miniIN = new System.Windows.Forms.PictureBox();
             this.kryptonPanel10 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
@@ -45,10 +48,13 @@
             this.text_BiensoVAO = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel5 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup6 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox_XeVAO = new System.Windows.Forms.PictureBox();
             this.kryptonPanel3 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel9 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup5 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox_LicensePlatesOUT = new System.Windows.Forms.PictureBox();
             this.kryptonGroup4 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox_miniOUT = new System.Windows.Forms.PictureBox();
             this.kryptonPanel11 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
@@ -59,6 +65,7 @@
             this.text_BiensoRA = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel6 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonGroup3 = new Krypton.Toolkit.KryptonGroup();
+            this.pictureBox_XERA = new System.Windows.Forms.PictureBox();
             this.kryptonPanel4 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel12 = new Krypton.Toolkit.KryptonPanel();
             this.kryptonPanel13 = new Krypton.Toolkit.KryptonPanel();
@@ -77,25 +84,19 @@
             this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel9 = new Krypton.Toolkit.KryptonLabel();
             this.txt_cpmLicensePlateIN = new Krypton.Toolkit.KryptonTextBox();
-            this.kryptonPanel7 = new Krypton.Toolkit.KryptonPanel();
+            this.p_wrapCheck = new Krypton.Toolkit.KryptonPanel();
+            this.btn_detail = new Krypton.Toolkit.KryptonButton();
             this.kryptonGroup8 = new Krypton.Toolkit.KryptonGroup();
+            this.picBox_cmpOUT = new System.Windows.Forms.PictureBox();
             this.kryptonGroup7 = new Krypton.Toolkit.KryptonGroup();
+            this.picBox_cmpIN = new System.Windows.Forms.PictureBox();
+            this.pc_Statusicon = new System.Windows.Forms.PictureBox();
             this.txb_message = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel11 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel10 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonLabel8 = new Krypton.Toolkit.KryptonLabel();
             this.kryptonButton4 = new Krypton.Toolkit.KryptonButton();
-            this.btn_detail = new Krypton.Toolkit.KryptonButton();
             this.kryptonButton3 = new Krypton.Toolkit.KryptonButton();
-            this.pictureBox_LicensePlatesIN = new System.Windows.Forms.PictureBox();
-            this.pictureBox_miniIN = new System.Windows.Forms.PictureBox();
-            this.pictureBox_XeVAO = new System.Windows.Forms.PictureBox();
-            this.pictureBox_LicensePlatesOUT = new System.Windows.Forms.PictureBox();
-            this.pictureBox_miniOUT = new System.Windows.Forms.PictureBox();
-            this.pictureBox_XERA = new System.Windows.Forms.PictureBox();
-            this.picBox_cmpOUT = new System.Windows.Forms.PictureBox();
-            this.picBox_cmpIN = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -107,10 +108,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2.Panel)).BeginInit();
             this.kryptonGroup2.Panel.SuspendLayout();
             this.kryptonGroup2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
             this.kryptonGroup1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel10)).BeginInit();
             this.kryptonPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel5)).BeginInit();
@@ -119,6 +122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup6.Panel)).BeginInit();
             this.kryptonGroup6.Panel.SuspendLayout();
             this.kryptonGroup6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).BeginInit();
             this.kryptonPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).BeginInit();
@@ -127,10 +131,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5.Panel)).BeginInit();
             this.kryptonGroup5.Panel.SuspendLayout();
             this.kryptonGroup5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).BeginInit();
             this.kryptonGroup4.Panel.SuspendLayout();
             this.kryptonGroup4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel11)).BeginInit();
             this.kryptonPanel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
@@ -139,31 +145,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3.Panel)).BeginInit();
             this.kryptonGroup3.Panel.SuspendLayout();
             this.kryptonGroup3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).BeginInit();
             this.kryptonPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel12)).BeginInit();
             this.kryptonPanel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel13)).BeginInit();
             this.kryptonPanel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel7)).BeginInit();
-            this.kryptonPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.p_wrapCheck)).BeginInit();
+            this.p_wrapCheck.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup8.Panel)).BeginInit();
             this.kryptonGroup8.Panel.SuspendLayout();
             this.kryptonGroup8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7.Panel)).BeginInit();
             this.kryptonGroup7.Panel.SuspendLayout();
             this.kryptonGroup7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpIN)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc_Statusicon)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPanel1
@@ -239,6 +240,17 @@
             this.kryptonGroup2.StateCommon.Border.Width = 2;
             this.kryptonGroup2.TabIndex = 4;
             // 
+            // pictureBox_LicensePlatesIN
+            // 
+            this.pictureBox_LicensePlatesIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_LicensePlatesIN.Image = global::SmartParking.Resource.IMG_Test2;
+            this.pictureBox_LicensePlatesIN.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_LicensePlatesIN.Name = "pictureBox_LicensePlatesIN";
+            this.pictureBox_LicensePlatesIN.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_LicensePlatesIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_LicensePlatesIN.TabIndex = 16;
+            this.pictureBox_LicensePlatesIN.TabStop = false;
+            // 
             // kryptonGroup1
             // 
             this.kryptonGroup1.Location = new System.Drawing.Point(22, 6);
@@ -259,6 +271,17 @@
             this.kryptonGroup1.StateCommon.Border.Rounding = 3F;
             this.kryptonGroup1.StateCommon.Border.Width = 2;
             this.kryptonGroup1.TabIndex = 3;
+            // 
+            // pictureBox_miniIN
+            // 
+            this.pictureBox_miniIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_miniIN.Image = global::SmartParking.Resource.IMG_Test1;
+            this.pictureBox_miniIN.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_miniIN.Name = "pictureBox_miniIN";
+            this.pictureBox_miniIN.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_miniIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_miniIN.TabIndex = 3;
+            this.pictureBox_miniIN.TabStop = false;
             // 
             // kryptonPanel10
             // 
@@ -420,6 +443,16 @@
             this.kryptonGroup6.StateCommon.Border.Width = 2;
             this.kryptonGroup6.TabIndex = 17;
             // 
+            // pictureBox_XeVAO
+            // 
+            this.pictureBox_XeVAO.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_XeVAO.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_XeVAO.Name = "pictureBox_XeVAO";
+            this.pictureBox_XeVAO.Size = new System.Drawing.Size(436, 310);
+            this.pictureBox_XeVAO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_XeVAO.TabIndex = 5;
+            this.pictureBox_XeVAO.TabStop = false;
+            // 
             // kryptonPanel3
             // 
             this.kryptonPanel3.Controls.Add(this.kryptonPanel9);
@@ -465,6 +498,17 @@
             this.kryptonGroup5.StateCommon.Border.Width = 2;
             this.kryptonGroup5.TabIndex = 16;
             // 
+            // pictureBox_LicensePlatesOUT
+            // 
+            this.pictureBox_LicensePlatesOUT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_LicensePlatesOUT.Image = global::SmartParking.Resource.IMG_Test2;
+            this.pictureBox_LicensePlatesOUT.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_LicensePlatesOUT.Name = "pictureBox_LicensePlatesOUT";
+            this.pictureBox_LicensePlatesOUT.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_LicensePlatesOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_LicensePlatesOUT.TabIndex = 5;
+            this.pictureBox_LicensePlatesOUT.TabStop = false;
+            // 
             // kryptonGroup4
             // 
             this.kryptonGroup4.Location = new System.Drawing.Point(19, 6);
@@ -485,6 +529,17 @@
             this.kryptonGroup4.StateCommon.Border.Rounding = 3F;
             this.kryptonGroup4.StateCommon.Border.Width = 2;
             this.kryptonGroup4.TabIndex = 15;
+            // 
+            // pictureBox_miniOUT
+            // 
+            this.pictureBox_miniOUT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_miniOUT.Image = global::SmartParking.Resource.IMG_Test1;
+            this.pictureBox_miniOUT.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_miniOUT.Name = "pictureBox_miniOUT";
+            this.pictureBox_miniOUT.Size = new System.Drawing.Size(182, 122);
+            this.pictureBox_miniOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_miniOUT.TabIndex = 4;
+            this.pictureBox_miniOUT.TabStop = false;
             // 
             // kryptonPanel11
             // 
@@ -646,10 +701,20 @@
             this.kryptonGroup3.StateCommon.Border.Width = 2;
             this.kryptonGroup3.TabIndex = 17;
             // 
+            // pictureBox_XERA
+            // 
+            this.pictureBox_XERA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox_XERA.Location = new System.Drawing.Point(6, 6);
+            this.pictureBox_XERA.Name = "pictureBox_XERA";
+            this.pictureBox_XERA.Size = new System.Drawing.Size(436, 310);
+            this.pictureBox_XERA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_XERA.TabIndex = 18;
+            this.pictureBox_XERA.TabStop = false;
+            // 
             // kryptonPanel4
             // 
             this.kryptonPanel4.Controls.Add(this.kryptonPanel12);
-            this.kryptonPanel4.Controls.Add(this.kryptonPanel7);
+            this.kryptonPanel4.Controls.Add(this.p_wrapCheck);
             this.kryptonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonPanel4.Location = new System.Drawing.Point(943, 3);
             this.kryptonPanel4.Name = "kryptonPanel4";
@@ -685,7 +750,7 @@
             this.kryptonPanel13.Controls.Add(this.kryptonLabel7);
             this.kryptonPanel13.Controls.Add(this.kryptonLabel9);
             this.kryptonPanel13.Controls.Add(this.txt_cpmLicensePlateIN);
-            this.kryptonPanel13.Location = new System.Drawing.Point(10, 6);
+            this.kryptonPanel13.Location = new System.Drawing.Point(7, 6);
             this.kryptonPanel13.Name = "kryptonPanel13";
             this.kryptonPanel13.Size = new System.Drawing.Size(451, 357);
             this.kryptonPanel13.StateCommon.Color1 = System.Drawing.Color.White;
@@ -864,6 +929,8 @@
             this.btn_Done.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
             this.btn_Done.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btn_Done.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Done.StateDisabled.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_Done.StateDisabled.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn_Done.TabIndex = 8;
             this.btn_Done.Values.Text = "Cho ra";
             // 
@@ -925,24 +992,49 @@
             this.txt_cpmLicensePlateIN.TabIndex = 3;
             this.txt_cpmLicensePlateIN.Text = "77H156235";
             // 
-            // kryptonPanel7
+            // p_wrapCheck
             // 
-            this.kryptonPanel7.Controls.Add(this.btn_detail);
-            this.kryptonPanel7.Controls.Add(this.kryptonGroup8);
-            this.kryptonPanel7.Controls.Add(this.kryptonGroup7);
-            this.kryptonPanel7.Controls.Add(this.pictureBox1);
-            this.kryptonPanel7.Controls.Add(this.txb_message);
-            this.kryptonPanel7.Controls.Add(this.kryptonLabel11);
-            this.kryptonPanel7.Controls.Add(this.kryptonLabel10);
-            this.kryptonPanel7.Controls.Add(this.kryptonLabel8);
-            this.kryptonPanel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.kryptonPanel7.Location = new System.Drawing.Point(0, 0);
-            this.kryptonPanel7.Name = "kryptonPanel7";
-            this.kryptonPanel7.Padding = new System.Windows.Forms.Padding(5, 10, 5, 10);
-            this.kryptonPanel7.Size = new System.Drawing.Size(464, 302);
-            this.kryptonPanel7.StateCommon.Color1 = System.Drawing.Color.Transparent;
-            this.kryptonPanel7.StateCommon.Color2 = System.Drawing.Color.Transparent;
-            this.kryptonPanel7.TabIndex = 1;
+            this.p_wrapCheck.Controls.Add(this.btn_detail);
+            this.p_wrapCheck.Controls.Add(this.kryptonGroup8);
+            this.p_wrapCheck.Controls.Add(this.kryptonGroup7);
+            this.p_wrapCheck.Controls.Add(this.pc_Statusicon);
+            this.p_wrapCheck.Controls.Add(this.txb_message);
+            this.p_wrapCheck.Controls.Add(this.kryptonLabel11);
+            this.p_wrapCheck.Controls.Add(this.kryptonLabel10);
+            this.p_wrapCheck.Controls.Add(this.kryptonLabel8);
+            this.p_wrapCheck.Dock = System.Windows.Forms.DockStyle.Top;
+            this.p_wrapCheck.Location = new System.Drawing.Point(0, 0);
+            this.p_wrapCheck.Name = "p_wrapCheck";
+            this.p_wrapCheck.Padding = new System.Windows.Forms.Padding(5, 10, 5, 10);
+            this.p_wrapCheck.Size = new System.Drawing.Size(464, 302);
+            this.p_wrapCheck.StateCommon.Color1 = System.Drawing.Color.Transparent;
+            this.p_wrapCheck.StateCommon.Color2 = System.Drawing.Color.Transparent;
+            this.p_wrapCheck.TabIndex = 1;
+            // 
+            // btn_detail
+            // 
+            this.btn_detail.CornerRoundingRadius = 7F;
+            this.btn_detail.Location = new System.Drawing.Point(338, 3);
+            this.btn_detail.Name = "btn_detail";
+            this.btn_detail.Size = new System.Drawing.Size(123, 32);
+            this.btn_detail.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
+            this.btn_detail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btn_detail.StateCommon.Border.Rounding = 7F;
+            this.btn_detail.StateCommon.Border.Width = 1;
+            this.btn_detail.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_detail.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btn_detail.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_detail.TabIndex = 20;
+            this.btn_detail.Values.Text = "Chi tiết";
+            this.btn_detail.Click += new System.EventHandler(this.btn_detail_Click);
             // 
             // kryptonGroup8
             // 
@@ -965,6 +1057,17 @@
             this.kryptonGroup8.StateCommon.Border.Width = 2;
             this.kryptonGroup8.TabIndex = 19;
             // 
+            // picBox_cmpOUT
+            // 
+            this.picBox_cmpOUT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBox_cmpOUT.Image = global::SmartParking.Resource.IMG_Test2;
+            this.picBox_cmpOUT.Location = new System.Drawing.Point(5, 5);
+            this.picBox_cmpOUT.Name = "picBox_cmpOUT";
+            this.picBox_cmpOUT.Size = new System.Drawing.Size(144, 99);
+            this.picBox_cmpOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_cmpOUT.TabIndex = 14;
+            this.picBox_cmpOUT.TabStop = false;
+            // 
             // kryptonGroup7
             // 
             this.kryptonGroup7.Location = new System.Drawing.Point(56, 174);
@@ -986,22 +1089,44 @@
             this.kryptonGroup7.StateCommon.Border.Width = 2;
             this.kryptonGroup7.TabIndex = 17;
             // 
+            // picBox_cmpIN
+            // 
+            this.picBox_cmpIN.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picBox_cmpIN.Image = global::SmartParking.Resource.IMG_Test2;
+            this.picBox_cmpIN.Location = new System.Drawing.Point(5, 5);
+            this.picBox_cmpIN.Name = "picBox_cmpIN";
+            this.picBox_cmpIN.Size = new System.Drawing.Size(144, 99);
+            this.picBox_cmpIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBox_cmpIN.TabIndex = 16;
+            this.picBox_cmpIN.TabStop = false;
+            // 
+            // pc_Statusicon
+            // 
+            this.pc_Statusicon.Image = ((System.Drawing.Image)(resources.GetObject("pc_Statusicon.Image")));
+            this.pc_Statusicon.Location = new System.Drawing.Point(64, 79);
+            this.pc_Statusicon.Name = "pc_Statusicon";
+            this.pc_Statusicon.Size = new System.Drawing.Size(57, 57);
+            this.pc_Statusicon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pc_Statusicon.TabIndex = 15;
+            this.pc_Statusicon.TabStop = false;
+            // 
             // txb_message
             // 
             this.txb_message.Enabled = false;
             this.txb_message.Location = new System.Drawing.Point(123, 79);
             this.txb_message.Name = "txb_message";
-            this.txb_message.Size = new System.Drawing.Size(286, 51);
-            this.txb_message.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.txb_message.StateCommon.Border.Color1 = System.Drawing.Color.Black;
-            this.txb_message.StateCommon.Border.Color2 = System.Drawing.Color.Black;
+            this.txb_message.Size = new System.Drawing.Size(286, 57);
+            this.txb_message.StateCommon.Back.Color1 = System.Drawing.Color.LightGreen;
+            this.txb_message.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
+            this.txb_message.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
             this.txb_message.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txb_message.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.txb_message.StateCommon.Border.Rounding = 0F;
-            this.txb_message.StateCommon.Border.Width = 1;
-            this.txb_message.StateCommon.Content.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_message.StateCommon.Border.Rounding = 3F;
+            this.txb_message.StateCommon.Border.Width = 3;
+            this.txb_message.StateCommon.Content.Color1 = System.Drawing.Color.Black;
+            this.txb_message.StateCommon.Content.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_message.StateCommon.Content.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
             this.txb_message.StateDisabled.Content.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txb_message.StateDisabled.Content.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
@@ -1055,31 +1180,6 @@
             this.kryptonButton4.TabIndex = 2;
             this.kryptonButton4.Values.Text = "Làn vào";
             // 
-            // btn_detail
-            // 
-            this.btn_detail.CornerRoundingRadius = 7F;
-            this.btn_detail.Location = new System.Drawing.Point(338, 3);
-            this.btn_detail.Name = "btn_detail";
-            this.btn_detail.Size = new System.Drawing.Size(123, 32);
-            this.btn_detail.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
-            this.btn_detail.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_detail.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
-            this.btn_detail.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
-            this.btn_detail.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btn_detail.StateCommon.Border.Rounding = 7F;
-            this.btn_detail.StateCommon.Border.Width = 1;
-            this.btn_detail.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.btn_detail.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.btn_detail.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_detail.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btn_detail.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btn_detail.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_detail.TabIndex = 20;
-            this.btn_detail.Values.Text = "Chi tiết";
-            this.btn_detail.Click += new System.EventHandler(this.btn_detail_Click);
-            // 
             // kryptonButton3
             // 
             this.kryptonButton3.CornerRoundingRadius = -1F;
@@ -1093,102 +1193,6 @@
             this.kryptonButton3.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryptonButton3.TabIndex = 1;
             this.kryptonButton3.Values.Text = "Làn ra";
-            // 
-            // pictureBox_LicensePlatesIN
-            // 
-            this.pictureBox_LicensePlatesIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_LicensePlatesIN.Image = global::SmartParking.Resource.IMG_Test2;
-            this.pictureBox_LicensePlatesIN.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_LicensePlatesIN.Name = "pictureBox_LicensePlatesIN";
-            this.pictureBox_LicensePlatesIN.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_LicensePlatesIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_LicensePlatesIN.TabIndex = 16;
-            this.pictureBox_LicensePlatesIN.TabStop = false;
-            // 
-            // pictureBox_miniIN
-            // 
-            this.pictureBox_miniIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_miniIN.Image = global::SmartParking.Resource.IMG_Test1;
-            this.pictureBox_miniIN.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_miniIN.Name = "pictureBox_miniIN";
-            this.pictureBox_miniIN.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_miniIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_miniIN.TabIndex = 3;
-            this.pictureBox_miniIN.TabStop = false;
-            // 
-            // pictureBox_XeVAO
-            // 
-            this.pictureBox_XeVAO.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_XeVAO.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_XeVAO.Name = "pictureBox_XeVAO";
-            this.pictureBox_XeVAO.Size = new System.Drawing.Size(436, 310);
-            this.pictureBox_XeVAO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_XeVAO.TabIndex = 5;
-            this.pictureBox_XeVAO.TabStop = false;
-            // 
-            // pictureBox_LicensePlatesOUT
-            // 
-            this.pictureBox_LicensePlatesOUT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_LicensePlatesOUT.Image = global::SmartParking.Resource.IMG_Test2;
-            this.pictureBox_LicensePlatesOUT.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_LicensePlatesOUT.Name = "pictureBox_LicensePlatesOUT";
-            this.pictureBox_LicensePlatesOUT.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_LicensePlatesOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_LicensePlatesOUT.TabIndex = 5;
-            this.pictureBox_LicensePlatesOUT.TabStop = false;
-            // 
-            // pictureBox_miniOUT
-            // 
-            this.pictureBox_miniOUT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_miniOUT.Image = global::SmartParking.Resource.IMG_Test1;
-            this.pictureBox_miniOUT.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_miniOUT.Name = "pictureBox_miniOUT";
-            this.pictureBox_miniOUT.Size = new System.Drawing.Size(182, 122);
-            this.pictureBox_miniOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_miniOUT.TabIndex = 4;
-            this.pictureBox_miniOUT.TabStop = false;
-            // 
-            // pictureBox_XERA
-            // 
-            this.pictureBox_XERA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox_XERA.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox_XERA.Name = "pictureBox_XERA";
-            this.pictureBox_XERA.Size = new System.Drawing.Size(436, 310);
-            this.pictureBox_XERA.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox_XERA.TabIndex = 18;
-            this.pictureBox_XERA.TabStop = false;
-            // 
-            // picBox_cmpOUT
-            // 
-            this.picBox_cmpOUT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picBox_cmpOUT.Image = global::SmartParking.Resource.IMG_Test2;
-            this.picBox_cmpOUT.Location = new System.Drawing.Point(5, 5);
-            this.picBox_cmpOUT.Name = "picBox_cmpOUT";
-            this.picBox_cmpOUT.Size = new System.Drawing.Size(144, 99);
-            this.picBox_cmpOUT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBox_cmpOUT.TabIndex = 14;
-            this.picBox_cmpOUT.TabStop = false;
-            // 
-            // picBox_cmpIN
-            // 
-            this.picBox_cmpIN.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picBox_cmpIN.Image = global::SmartParking.Resource.IMG_Test2;
-            this.picBox_cmpIN.Location = new System.Drawing.Point(5, 5);
-            this.picBox_cmpIN.Name = "picBox_cmpIN";
-            this.picBox_cmpIN.Size = new System.Drawing.Size(144, 99);
-            this.picBox_cmpIN.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picBox_cmpIN.TabIndex = 16;
-            this.picBox_cmpIN.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SmartParking.Resource.checkIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(69, 79);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // fManagerCheckInOut
             // 
@@ -1212,10 +1216,12 @@
             this.kryptonGroup2.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup2)).EndInit();
             this.kryptonGroup2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).EndInit();
             this.kryptonGroup1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel10)).EndInit();
             this.kryptonPanel10.ResumeLayout(false);
             this.kryptonPanel10.PerformLayout();
@@ -1225,6 +1231,7 @@
             this.kryptonGroup6.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup6)).EndInit();
             this.kryptonGroup6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel3)).EndInit();
             this.kryptonPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel9)).EndInit();
@@ -1233,10 +1240,12 @@
             this.kryptonGroup5.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup5)).EndInit();
             this.kryptonGroup5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4.Panel)).EndInit();
             this.kryptonGroup4.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup4)).EndInit();
             this.kryptonGroup4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel11)).EndInit();
             this.kryptonPanel11.ResumeLayout(false);
             this.kryptonPanel11.PerformLayout();
@@ -1246,6 +1255,7 @@
             this.kryptonGroup3.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup3)).EndInit();
             this.kryptonGroup3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel4)).EndInit();
             this.kryptonPanel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel12)).EndInit();
@@ -1253,26 +1263,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel13)).EndInit();
             this.kryptonPanel13.ResumeLayout(false);
             this.kryptonPanel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel7)).EndInit();
-            this.kryptonPanel7.ResumeLayout(false);
-            this.kryptonPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.p_wrapCheck)).EndInit();
+            this.p_wrapCheck.ResumeLayout(false);
+            this.p_wrapCheck.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup8.Panel)).EndInit();
             this.kryptonGroup8.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup8)).EndInit();
             this.kryptonGroup8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7.Panel)).EndInit();
             this.kryptonGroup7.Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup7)).EndInit();
             this.kryptonGroup7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XeVAO)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_LicensePlatesOUT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_miniOUT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_XERA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpOUT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox_cmpIN)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pc_Statusicon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1286,7 +1290,7 @@
         private Krypton.Toolkit.KryptonPanel kryptonPanel3;
         private Krypton.Toolkit.KryptonPanel kryptonPanel6;
         private Krypton.Toolkit.KryptonPanel kryptonPanel4;
-        private Krypton.Toolkit.KryptonPanel kryptonPanel7;
+        private Krypton.Toolkit.KryptonPanel p_wrapCheck;
         private Krypton.Toolkit.KryptonPanel kryptonPanel9;
         private Krypton.Toolkit.KryptonPanel kryptonPanel11;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
@@ -1313,7 +1317,7 @@
         private Krypton.Toolkit.KryptonTextBox txt_dayIN;
         private Krypton.Toolkit.KryptonTextBox txt_hourIN;
         private Krypton.Toolkit.KryptonButton kryptonButton2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pc_Statusicon;
         private Krypton.Toolkit.KryptonPanel kryptonPanel8;
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel10;

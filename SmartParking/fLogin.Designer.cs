@@ -74,6 +74,7 @@
             // 
             this.txt_Password.Location = new System.Drawing.Point(90, 0);
             this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(220, 29);
             this.txt_Password.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.txt_Password.StateCommon.Border.Color1 = System.Drawing.Color.Blue;

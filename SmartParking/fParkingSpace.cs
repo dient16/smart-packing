@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartParking.Model;
-
 namespace SmartParking
 {
     public partial class fParkingSpace : MetroFramework.Forms.MetroForm
@@ -46,25 +45,39 @@ namespace SmartParking
             {
                 if(item.SpaceNumber.ToCharArray()[item.SpaceNumber.ToCharArray().Length -1 ] == zone)
                 {
-                    Button btn = new Button() { Width = 70, Height = 70 };
-
+                    Krypton.Toolkit.KryptonButton btn = new Krypton.Toolkit.KryptonButton() { Width = 74, Height = 89 };
                     btn.Click += Btn_Click;
                     btn.Name = "btn_" + item.SpaceNumber;
                     btn.Tag = item;
+                    btn.StateCommon.Border.Rounding = 5;
+                    btn.StateCommon.Border.Width = 2;
+                    btn.StateCommon.Border.Color1 = Color.Black;
+                    btn.StateCommon.Content.ShortText.Font = new Font("Poppins", 8, FontStyle.Regular);
+                    /*btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 10;
+                    btn.FlatAppearance.BorderColor = Color.Black; //Color.FromArgb(255, 255, 255, 255);*/
 
                     switch (item.Availability)
                     {
                         case "Tr?ng":
-                            btn.BackColor = Color.Aqua;
+                            btn.StateCommon.Back.Color1 = Color.Aqua;
+                            btn.StateCommon.Back.Color2 = Color.Aqua;
                             btn.Text = item.SpaceNumber + Environment.NewLine + "Trống";
                             break;
                         case "Ðã d?t ch?":
-                            btn.BackColor = Color.LightYellow;
+                            btn.StateCommon.Back.Color1 = Color.LightYellow;
+                            btn.StateCommon.Back.Color2 = Color.LightYellow;
                             btn.Text = item.SpaceNumber + Environment.NewLine + "Đã đặt chỗ";
                             break;
+                        case "Ðang d? xe":
+                            btn.StateCommon.Back.Color1 = Color.LightPink;
+                            btn.StateCommon.Back.Color2 = Color.LightPink;
+                            btn.Text = item.SpaceNumber + Environment.NewLine + "Đã đỗ xe";
+                            break;
                         default:
-                            btn.BackColor = Color.LightPink;
-                            btn.Text = item.SpaceNumber + Environment.NewLine + "Đã đậu xe";
+                            btn.StateCommon.Back.Color1 = Color.LightPink;
+                            btn.StateCommon.Back.Color2 = Color.LightPink;
+                            btn.Text = item.SpaceNumber + Environment.NewLine + "Đã đỗ xe";
                             break;
                     }
                     flp.Controls.Add(btn);
@@ -74,8 +87,8 @@ namespace SmartParking
 
         private void Btn_Click(object sender, EventArgs e)
         {
-            var spaceName = (sender as Button).Tag as ParkingSpace;
-            if (spaceName.Availability == "Ðã d? xe")
+            var spaceName = (sender as Krypton.Toolkit.KryptonButton).Tag as ParkingSpace;
+            if (spaceName.Availability == "Ðang d? xe")
             {
                 MessageBox.Show("Chỗ này có chủ rồi");
                 return;
@@ -87,13 +100,18 @@ namespace SmartParking
             }
             fBooking fBooking = new fBooking();
             int BookingID = HandleDataDB.Ins.GetCountBooking() + 1;
-            var txt_id = GetChildrenControl("txb_BookingID", fBooking);
+            
+            var p_wrap = GetChildrenControl("p_wrap", fBooking);
+            var panel1 = GetChildrenControl("panel1", p_wrap);
+            var panel2 = GetChildrenControl("panel2", p_wrap);
+            var panel3 = GetChildrenControl("panel3", p_wrap);
+            var txt_id = GetChildrenControl("txb_BookingID", panel1);
             txt_id.Text = BookingID.ToString();
             txt_id.Enabled = false;
-            GetChildrenControl("txb_parkingspace", fBooking).Text = spaceName.SpaceNumber;
-            GetChildrenControl("txb_totalcost", fBooking).Enabled = false;
-            GetChildrenControl("txb_totalcost", fBooking).Enabled = false;
-            var paneluser = GetChildrenControl("Panel_User", fBooking);
+            GetChildrenControl("txb_parkingspace", panel1).Text = spaceName.SpaceNumber;
+            GetChildrenControl("txb_totalcost", panel1).Enabled = false;
+            GetChildrenControl("txb_totalcost", panel1).Enabled = false;
+            var paneluser = GetChildrenControl("Panel_User", p_wrap);
             if (HandleDataDB.Ins.Accconut != null)
             {
                 var txb_EmailUser = GetChildrenControl("txb_EmailUser", paneluser);
@@ -102,14 +120,13 @@ namespace SmartParking
                 var txb_UserName = GetChildrenControl("txb_UserName", paneluser);
                 txb_UserName.Text = HandleDataDB.Ins.Accconut.Username;
                 txb_UserName.Enabled = false;
-                fBooking.Controls.Remove(GetChildrenControl("lb_EmailGuesst", fBooking));
-                fBooking.Controls.Remove(GetChildrenControl("txb_EmailGuest", fBooking));               
+                p_wrap.Controls.Remove(panel2);          
             }
             else
             {
-                fBooking.Controls.Remove(paneluser);
+                p_wrap.Controls.Remove(paneluser);
             }
-            var btn_Booking = GetChildrenControl("btn_Booking", fBooking);
+            var btn_Booking = GetChildrenControl("btn_Booking", panel3);
             btn_Booking.Tag = fBooking;
             if (btn_Booking != null)
                 btn_Booking.Click += Btn_Booking_Click;

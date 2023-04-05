@@ -136,12 +136,13 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\DataProvider.cs" />
-    <Compile Include="Model\fDetailCheckInOut.cs">
+    <Compile Include="fDetailCheckInOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Model\fDetailCheckInOut.Designer.cs">
+    <Compile Include="fDetailCheckInOut.Designer.cs">
       <DependentUpon>fDetailCheckInOut.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\DetailCheckInOut.cs" />
     <Compile Include="Model\HandleDataDB.cs" />
     <Compile Include="Model\Model.Context.cs">
       <AutoGen>True</AutoGen>
@@ -174,6 +175,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="fAdminManager.resx">
+      <DependentUpon>fAdminManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBooking.resx">
       <DependentUpon>fBooking.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,7 +193,7 @@
     <EmbeddedResource Include="fManagerCheckInOut.resx">
       <DependentUpon>fManagerCheckInOut.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Model\fDetailCheckInOut.resx">
+    <EmbeddedResource Include="fDetailCheckInOut.resx">
       <DependentUpon>fDetailCheckInOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -256,6 +260,8 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\checkIconMINI.png" />
+    <None Include="Resources\closeIcon.png" />
     <None Include="Resources\checkIcon.png" />
   </ItemGroup>
   <ItemGroup>

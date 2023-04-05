@@ -109,15 +109,21 @@ namespace SmartParking.Model
         {
             return DataProvider.Ins.DB.CheckInOuts.FirstOrDefault(x => x.CheckInOutID == idCard);
         }
-        public ObservableCollection<CheckInOut> GetListCheckInOut()
+        public ObservableCollection<DetailCheckInOut> GetListCheckInOut()
         {
-            ObservableCollection<CheckInOut> LS = new ObservableCollection<CheckInOut>();
+            ObservableCollection<CheckInOut> LSCheckinOut = new ObservableCollection<CheckInOut>();
             var ConutSpace = DataProvider.Ins.DB.CheckInOuts.Where(x => true).Count();
             for (int i = 1; i <= ConutSpace; i++)
             {
-                var space = DataProvider.Ins.DB.CheckInOuts.FirstOrDefault(x => x.SpaceID == i);
-                LS.Add(space);
+               var space = DataProvider.Ins.DB.CheckInOuts.FirstOrDefault(x => x.CheckInOutID == i);
+                LSCheckinOut.Add(space);
             }
+            ObservableCollection<DetailCheckInOut> LS = new ObservableCollection<DetailCheckInOut>();
+            foreach (var item in LSCheckinOut)
+            {
+                LS.Add(new DetailCheckInOut(item.CheckInOutID, item.Car.LicensePlate, item.ParkingSpace.SpaceNumber,
+                    item.CheckInTime, item.CheckOutTime, item.TotalCost, item.Status));
+            }    
             return LS;
         }
     }

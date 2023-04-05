@@ -35,3 +35,4 @@ C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MI
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.fBooking.resources
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.fInputCardID.resources
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.Model.fDetailCheckInOut.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.fAdminManager.resources
