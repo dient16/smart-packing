@@ -75,6 +75,10 @@ namespace SmartParking.Model
                 return false;
             }
         }
+        public int GetCountCar()
+        {
+            return DataProvider.Ins.DB.Cars.Where(x => true).Count();
+        }
         public bool InsertCar(Car car)
         {
             try
@@ -82,6 +86,21 @@ namespace SmartParking.Model
                 if (car == null)
                     return false;
                 DataProvider.Ins.DB.Cars.Add(car);
+                DataProvider.Ins.DB.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        public bool InsertBooking(Booking booking)
+        {
+            try
+            {
+                if (booking == null)
+                    return false;
+                DataProvider.Ins.DB.Bookings.Add(booking);
                 DataProvider.Ins.DB.SaveChanges();
                 return true;
             }

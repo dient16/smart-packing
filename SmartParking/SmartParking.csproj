@@ -88,40 +88,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fAdminManager.cs">
+    <Compile Include="GUI\fAdminManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fAdminManager.Designer.cs">
+    <Compile Include="GUI\fAdminManager.Designer.cs">
       <DependentUpon>fAdminManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="fBooking.cs">
+    <Compile Include="GUI\fBooking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fBooking.Designer.cs">
+    <Compile Include="GUI\fBooking.Designer.cs">
       <DependentUpon>fBooking.cs</DependentUpon>
     </Compile>
-    <Compile Include="fInputCardID.cs">
+    <Compile Include="GUI\fInputCardID.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fInputCardID.Designer.cs">
+    <Compile Include="GUI\fInputCardID.Designer.cs">
       <DependentUpon>fInputCardID.cs</DependentUpon>
     </Compile>
-    <Compile Include="fParkingSpace.cs">
+    <Compile Include="GUI\fParkingSpace.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fParkingSpace.Designer.cs">
+    <Compile Include="GUI\fParkingSpace.Designer.cs">
       <DependentUpon>fParkingSpace.cs</DependentUpon>
     </Compile>
-    <Compile Include="fLogin.cs">
+    <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fLogin.Designer.cs">
+    <Compile Include="GUI\fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="fManagerCheckInOut.cs">
+    <Compile Include="GUI\fManagerCheckInOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fManagerCheckInOut.Designer.cs">
+    <Compile Include="GUI\fManagerCheckInOut.Designer.cs">
       <DependentUpon>fManagerCheckInOut.cs</DependentUpon>
     </Compile>
     <Compile Include="HandleLicensePlate\FindTextLicensePlate.cs" />
@@ -136,10 +136,10 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\DataProvider.cs" />
-    <Compile Include="fDetailCheckInOut.cs">
+    <Compile Include="GUI\fDetailCheckInOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fDetailCheckInOut.Designer.cs">
+    <Compile Include="GUI\fDetailCheckInOut.Designer.cs">
       <DependentUpon>fDetailCheckInOut.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\DetailCheckInOut.cs" />
@@ -175,25 +175,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="fAdminManager.resx">
+    <EmbeddedResource Include="GUI\fAdminManager.resx">
       <DependentUpon>fAdminManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fBooking.resx">
+    <EmbeddedResource Include="GUI\fBooking.resx">
       <DependentUpon>fBooking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fInputCardID.resx">
+    <EmbeddedResource Include="GUI\fInputCardID.resx">
       <DependentUpon>fInputCardID.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fParkingSpace.resx">
+    <EmbeddedResource Include="GUI\fParkingSpace.resx">
       <DependentUpon>fParkingSpace.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fLogin.resx">
+    <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fManagerCheckInOut.resx">
+    <EmbeddedResource Include="GUI\fManagerCheckInOut.resx">
       <DependentUpon>fManagerCheckInOut.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fDetailCheckInOut.resx">
+    <EmbeddedResource Include="GUI\fDetailCheckInOut.resx">
       <DependentUpon>fDetailCheckInOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -210,11 +210,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="App.config" />
     <EntityDeploy Include="Model\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="App.config" />
     <None Include="Model\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
@@ -252,8 +252,8 @@
     <Content Include="lib\opencv_videostab240.dll" />
     <Content Include="Model\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model.Context.cs</LastGenOutput>
       <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model\Model.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

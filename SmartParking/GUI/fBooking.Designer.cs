@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
-            this.txb_TyeCar = new Krypton.Toolkit.KryptonTextBox();
+            this.txb_totalcost = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel1 = new Krypton.Toolkit.KryptonLabel();
             this.txb_LicensePlate = new Krypton.Toolkit.KryptonTextBox();
             this.lb_EmailGuesst = new Krypton.Toolkit.KryptonLabel();
@@ -39,18 +39,19 @@
             this.txt_ID = new Krypton.Toolkit.KryptonLabel();
             this.txb_BookingID = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
-            this.txb_totalcost = new Krypton.Toolkit.KryptonTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cb_CarName = new Krypton.Toolkit.KryptonComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Booking = new Krypton.Toolkit.KryptonButton();
             this.p_wrap = new System.Windows.Forms.FlowLayoutPanel();
-            this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
-            this.Lb_email = new Krypton.Toolkit.KryptonLabel();
             this.Panel_User = new System.Windows.Forms.Panel();
-            this.txb_UserName = new Krypton.Toolkit.KryptonTextBox();
+            this.Lb_email = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonLabel7 = new Krypton.Toolkit.KryptonLabel();
             this.txb_EmailUser = new Krypton.Toolkit.KryptonTextBox();
+            this.txb_UserName = new Krypton.Toolkit.KryptonTextBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_CarName)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.p_wrap.SuspendLayout();
@@ -68,22 +69,22 @@
             this.kryptonLabel2.TabIndex = 10;
             this.kryptonLabel2.Values.Text = "Loại xe";
             // 
-            // txb_TyeCar
+            // txb_totalcost
             // 
-            this.txb_TyeCar.Location = new System.Drawing.Point(152, 94);
-            this.txb_TyeCar.Name = "txb_TyeCar";
-            this.txb_TyeCar.Size = new System.Drawing.Size(226, 35);
-            this.txb_TyeCar.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txb_TyeCar.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txb_TyeCar.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txb_TyeCar.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txb_totalcost.Location = new System.Drawing.Point(153, 132);
+            this.txb_totalcost.Name = "txb_totalcost";
+            this.txb_totalcost.Size = new System.Drawing.Size(226, 35);
+            this.txb_totalcost.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txb_totalcost.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_totalcost.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_totalcost.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txb_TyeCar.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.txb_TyeCar.StateCommon.Border.Rounding = 8F;
-            this.txb_TyeCar.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_TyeCar.TabIndex = 9;
-            this.txb_TyeCar.Text = "Ô tô";
+            this.txb_totalcost.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txb_totalcost.StateCommon.Border.Rounding = 8F;
+            this.txb_totalcost.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_totalcost.TabIndex = 9;
+            this.txb_totalcost.Text = "50000";
             // 
             // kryptonLabel1
             // 
@@ -210,31 +211,13 @@
             this.kryptonLabel4.TabIndex = 20;
             this.kryptonLabel4.Values.Text = "Giá";
             // 
-            // txb_totalcost
-            // 
-            this.txb_totalcost.Enabled = false;
-            this.txb_totalcost.Location = new System.Drawing.Point(152, 135);
-            this.txb_totalcost.Name = "txb_totalcost";
-            this.txb_totalcost.Size = new System.Drawing.Size(226, 35);
-            this.txb_totalcost.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txb_totalcost.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txb_totalcost.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txb_totalcost.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txb_totalcost.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.txb_totalcost.StateCommon.Border.Rounding = 8F;
-            this.txb_totalcost.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_totalcost.TabIndex = 19;
-            this.txb_totalcost.Text = "50000 đ";
-            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cb_CarName);
             this.panel1.Controls.Add(this.txb_BookingID);
             this.panel1.Controls.Add(this.txb_LicensePlate);
             this.panel1.Controls.Add(this.kryptonLabel1);
             this.panel1.Controls.Add(this.kryptonLabel4);
-            this.panel1.Controls.Add(this.txb_TyeCar);
             this.panel1.Controls.Add(this.txb_totalcost);
             this.panel1.Controls.Add(this.kryptonLabel2);
             this.panel1.Controls.Add(this.txt_ID);
@@ -245,6 +228,29 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(406, 222);
             this.panel1.TabIndex = 27;
+            // 
+            // cb_CarName
+            // 
+            this.cb_CarName.CornerRoundingRadius = 6F;
+            this.cb_CarName.DropDownWidth = 221;
+            this.cb_CarName.IntegralHeight = false;
+            this.cb_CarName.Items.AddRange(new object[] {
+            "Ô tô",
+            "Xe máy"});
+            this.cb_CarName.Location = new System.Drawing.Point(152, 99);
+            this.cb_CarName.Name = "cb_CarName";
+            this.cb_CarName.Size = new System.Drawing.Size(225, 27);
+            this.cb_CarName.StateCommon.ComboBox.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_CarName.StateCommon.ComboBox.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cb_CarName.StateCommon.ComboBox.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.cb_CarName.StateCommon.ComboBox.Border.Rounding = 6F;
+            this.cb_CarName.StateCommon.ComboBox.Border.Width = 1;
+            this.cb_CarName.StateCommon.ComboBox.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_CarName.StateCommon.ComboBox.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.cb_CarName.StateCommon.ComboBox.Content.TextH = Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.cb_CarName.TabIndex = 21;
             // 
             // panel2
             // 
@@ -299,28 +305,6 @@
             this.p_wrap.Size = new System.Drawing.Size(430, 418);
             this.p_wrap.TabIndex = 30;
             // 
-            // kryptonLabel7
-            // 
-            this.kryptonLabel7.Location = new System.Drawing.Point(44, 55);
-            this.kryptonLabel7.Name = "kryptonLabel7";
-            this.kryptonLabel7.Size = new System.Drawing.Size(82, 22);
-            this.kryptonLabel7.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
-            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonLabel7.TabIndex = 25;
-            this.kryptonLabel7.Values.Text = "UserName";
-            // 
-            // Lb_email
-            // 
-            this.Lb_email.Location = new System.Drawing.Point(44, 14);
-            this.Lb_email.Name = "Lb_email";
-            this.Lb_email.Size = new System.Drawing.Size(48, 22);
-            this.Lb_email.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_email.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
-            this.Lb_email.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lb_email.TabIndex = 23;
-            this.Lb_email.Values.Text = "Email";
-            // 
             // Panel_User
             // 
             this.Panel_User.Controls.Add(this.Lb_email);
@@ -333,22 +317,27 @@
             this.Panel_User.Size = new System.Drawing.Size(406, 85);
             this.Panel_User.TabIndex = 26;
             // 
-            // txb_UserName
+            // Lb_email
             // 
-            this.txb_UserName.Location = new System.Drawing.Point(152, 45);
-            this.txb_UserName.Name = "txb_UserName";
-            this.txb_UserName.Size = new System.Drawing.Size(225, 35);
-            this.txb_UserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txb_UserName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txb_UserName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.txb_UserName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txb_UserName.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
-            this.txb_UserName.StateCommon.Border.Rounding = 8F;
-            this.txb_UserName.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_UserName.TabIndex = 24;
-            this.txb_UserName.Text = "abcxyz";
+            this.Lb_email.Location = new System.Drawing.Point(44, 14);
+            this.Lb_email.Name = "Lb_email";
+            this.Lb_email.Size = new System.Drawing.Size(48, 22);
+            this.Lb_email.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lb_email.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
+            this.Lb_email.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lb_email.TabIndex = 23;
+            this.Lb_email.Values.Text = "Email";
+            // 
+            // kryptonLabel7
+            // 
+            this.kryptonLabel7.Location = new System.Drawing.Point(44, 55);
+            this.kryptonLabel7.Name = "kryptonLabel7";
+            this.kryptonLabel7.Size = new System.Drawing.Size(82, 22);
+            this.kryptonLabel7.StateCommon.LongText.Font = new System.Drawing.Font("Poppins SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel7.StateCommon.ShortText.Color1 = System.Drawing.Color.Blue;
+            this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Poppins SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryptonLabel7.TabIndex = 25;
+            this.kryptonLabel7.Values.Text = "UserName";
             // 
             // txb_EmailUser
             // 
@@ -367,6 +356,23 @@
             this.txb_EmailUser.TabIndex = 22;
             this.txb_EmailUser.Text = "abc12@gmail.com";
             // 
+            // txb_UserName
+            // 
+            this.txb_UserName.Location = new System.Drawing.Point(152, 45);
+            this.txb_UserName.Name = "txb_UserName";
+            this.txb_UserName.Size = new System.Drawing.Size(225, 35);
+            this.txb_UserName.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txb_UserName.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_UserName.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.txb_UserName.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txb_UserName.StateCommon.Border.GraphicsHint = Krypton.Toolkit.PaletteGraphicsHint.AntiAlias;
+            this.txb_UserName.StateCommon.Border.Rounding = 8F;
+            this.txb_UserName.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_UserName.TabIndex = 24;
+            this.txb_UserName.Text = "abcxyz";
+            // 
             // fBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,6 +383,7 @@
             this.Text = "fBooking";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_CarName)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -390,7 +397,7 @@
         #endregion
 
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;
-        private Krypton.Toolkit.KryptonTextBox txb_TyeCar;
+        private Krypton.Toolkit.KryptonTextBox txb_totalcost;
         private Krypton.Toolkit.KryptonLabel kryptonLabel1;
         private Krypton.Toolkit.KryptonTextBox txb_LicensePlate;
         private Krypton.Toolkit.KryptonLabel lb_EmailGuesst;
@@ -400,7 +407,6 @@
         private Krypton.Toolkit.KryptonLabel txt_ID;
         private Krypton.Toolkit.KryptonTextBox txb_BookingID;
         private Krypton.Toolkit.KryptonLabel kryptonLabel4;
-        private Krypton.Toolkit.KryptonTextBox txb_totalcost;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -411,5 +417,6 @@
         private Krypton.Toolkit.KryptonLabel kryptonLabel7;
         private Krypton.Toolkit.KryptonTextBox txb_EmailUser;
         private Krypton.Toolkit.KryptonTextBox txb_UserName;
+        private Krypton.Toolkit.KryptonComboBox cb_CarName;
     }
 }

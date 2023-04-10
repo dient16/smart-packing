@@ -15,8 +15,9 @@ namespace SmartParking
 {
     public partial class fManagerCheckInOut : MetroFramework.Forms.MetroForm   
     {
-        [Obsolete]
+        
         fManagerCheckInOut _this;
+        [Obsolete]
         public fManagerCheckInOut()
         {
             _this = this;
@@ -45,7 +46,7 @@ namespace SmartParking
         }
         [Obsolete]
         private void kryptonButton1_Click(object sender, EventArgs e)
-        {  
+        {
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.Filter = "Image (*.bmp; *.jpg; *.jpeg; *.png) |*.bmp; *.jpg; *.jpeg; *.png|All files (*.*)|*.*||";
             dlg.InitialDirectory = Application.StartupPath + "\\ImageTest";
@@ -75,7 +76,7 @@ namespace SmartParking
             {
                 Car newCar = new Car()
                 {
-                    CarID = DataProvider.Ins.DB.Cars.Where(x => true).Count() + 1,
+                    CarID = HandleDataDB.Ins.GetCountCar() + 1,
                     CarType = "OT",
                     CarName = "Ô tô",
                     LicensePlate = temp2
@@ -93,7 +94,7 @@ namespace SmartParking
                 CheckInTime = CheckInTime,
                 CheckOutTime = null,
                 TotalCost = 50000,
-                Status = "Đã đỗ xe"
+                Status = "Đang đỗ xe"
             };
             if (HandleDataDB.Ins.InsertCheckInOut(checkInOut))
                 MessageBox.Show("Thêm xe vào bãi thành công");
@@ -189,11 +190,11 @@ namespace SmartParking
                     txt_cpmLicensePlateIN.Text = checkInOut.Car.LicensePlate;
                     txt_cpmLicensePlateOUT.Text = temp2;
                     txb_totalCost.Text = checkInOut.TotalCost.ToString();
-                    txt_dayIN.Text = checkInOut.CheckInTime.ToString("dd/mm/yyyy", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                    txt_dayIN.Text = checkInOut.CheckInTime?.ToString("dd/mm/yyyy", System.Globalization.DateTimeFormatInfo.InvariantInfo);
                     txt_dayOUT.Text = TimeCheckOut.ToString("dd/mm/yyyy", System.Globalization.DateTimeFormatInfo.InvariantInfo);
-                    txt_hourIN.Text = checkInOut.CheckInTime.ToString("hh:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+                    txt_hourIN.Text = checkInOut.CheckInTime?.ToString("hh:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo);
                     txt_hourOUT.Text = TimeCheckOut.ToString("hh:mm:ss", System.Globalization.DateTimeFormatInfo.InvariantInfo);
-                    txb_duration.Text = SubDateTime(TimeCheckOut, checkInOut.CheckInTime);
+                    txb_duration.Text = SubDateTime(TimeCheckOut, (DateTime)checkInOut.CheckInTime);
                     if (!string.Equals(checkInOut.Car.LicensePlate, temp2))
                     {
                         txb_message.Text = "BIỂN SỐ KHÁC";

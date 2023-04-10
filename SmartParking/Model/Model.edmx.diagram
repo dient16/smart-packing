@@ -4,18 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="0d3eaeb3e54f4437b8d5a5aa5524ce0e" Name="Diagram1">
-        <EntityTypeShape EntityType="SmartParkingModel.Booking" Width="1.5" PointX="6.125" PointY="0.5" />
-        <EntityTypeShape EntityType="SmartParkingModel.Car" Width="1.5" PointX="9.25" PointY="3.875" />
-        <EntityTypeShape EntityType="SmartParkingModel.CheckInOut" Width="1.5" PointX="6.125" PointY="3.875" />
-        <EntityTypeShape EntityType="SmartParkingModel.ParkingSpace" Width="1.5" PointX="3.875" PointY="3.875" />
-        <EntityTypeShape EntityType="SmartParkingModel.Role" Width="1.5" PointX="1.625" PointY="0.875" />
-        <EntityTypeShape EntityType="SmartParkingModel.User" Width="1.5" PointX="3.875" PointY="0.5" />
-        <AssociationConnector Association="SmartParkingModel.FK__Booking__SpaceID__2F10007B" />
-        <AssociationConnector Association="SmartParkingModel.FK__Booking__UserID__2E1BDC42" />
-        <AssociationConnector Association="SmartParkingModel.FK__CheckInOu__CarID__31EC6D26" />
-        <AssociationConnector Association="SmartParkingModel.FK__CheckInOu__Space__32E0915F" />
-        <AssociationConnector Association="SmartParkingModel.FK__Users__RoleID__267ABA7A" />
+      <Diagram DiagramId="19f6da1938594feda5fc6d8bbc3c4c28" Name="Diagram1">
+        <EntityTypeShape EntityType="SmartParkingModel.Booking" Width="1.5" PointX="3.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartParkingModel.Car" Width="1.5" PointX="8.5" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartParkingModel.CheckInOut" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartParkingModel.ParkingSpace" Width="1.5" PointX="8.625" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartParkingModel.Role" Width="1.5" PointX="0.625" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartParkingModel.User" Width="1.5" PointX="3.375" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="SmartParkingModel.FK__Booking__SpaceID__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartParkingModel.FK__Booking__UserID__2D27B809" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartParkingModel.FK__CheckInOu__Booki__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartParkingModel.FK__CheckInOu__CarID__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartParkingModel.FK__CheckInOu__Space__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartParkingModel.FK__Users__RoleID__267ABA7A" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

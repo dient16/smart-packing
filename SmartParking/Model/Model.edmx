@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="SmartParkingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="SmartParkingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Booking">
           <Key>
             <PropertyRef Name="BookingID" />
@@ -14,7 +14,7 @@
           <Property Name="SpaceID" Type="int" Nullable="false" />
           <Property Name="BookingTime" Type="datetime" Nullable="false" />
           <Property Name="EmailGust" Type="varchar" MaxLength="50" />
-          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="Car">
           <Key>
@@ -32,10 +32,11 @@
           <Property Name="CheckInOutID" Type="int" Nullable="false" />
           <Property Name="CarID" Type="int" Nullable="false" />
           <Property Name="SpaceID" Type="int" Nullable="false" />
-          <Property Name="CheckInTime" Type="datetime" Nullable="false" />
+          <Property Name="BookingID" Type="int" />
+          <Property Name="CheckInTime" Type="datetime" />
           <Property Name="CheckOutTime" Type="datetime" />
-          <Property Name="TotalCost" Type="decimal" Precision="10" Scale="2" Nullable="false" />
-          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="TotalCost" Type="float" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="ParkingSpace">
           <Key>
@@ -43,7 +44,7 @@
           </Key>
           <Property Name="SpaceID" Type="int" Nullable="false" />
           <Property Name="SpaceNumber" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="Availability" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Availability" Type="nvarchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -58,11 +59,12 @@
           </Key>
           <Property Name="UserID" Type="int" Nullable="false" />
           <Property Name="Username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="RoleID" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Booking__SpaceID__2F10007B">
+        <Association Name="FK__Booking__SpaceID__2E1BDC42">
           <End Role="ParkingSpace" Type="Self.ParkingSpace" Multiplicity="1" />
           <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
           <ReferentialConstraint>
@@ -74,7 +76,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Booking__UserID__2E1BDC42">
+        <Association Name="FK__Booking__UserID__2D27B809">
           <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
           <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
           <ReferentialConstraint>
@@ -86,7 +88,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CheckInOu__CarID__31EC6D26">
+        <Association Name="FK__CheckInOu__Booki__32E0915F">
+          <End Role="Booking" Type="Self.Booking" Multiplicity="0..1" />
+          <End Role="CheckInOut" Type="Self.CheckInOut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Booking">
+              <PropertyRef Name="BookingID" />
+            </Principal>
+            <Dependent Role="CheckInOut">
+              <PropertyRef Name="BookingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CheckInOu__CarID__30F848ED">
           <End Role="Car" Type="Self.Car" Multiplicity="1" />
           <End Role="CheckInOut" Type="Self.CheckInOut" Multiplicity="*" />
           <ReferentialConstraint>
@@ -98,7 +112,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CheckInOu__Space__32E0915F">
+        <Association Name="FK__CheckInOu__Space__31EC6D26">
           <End Role="ParkingSpace" Type="Self.ParkingSpace" Multiplicity="1" />
           <End Role="CheckInOut" Type="Self.CheckInOut" Multiplicity="*" />
           <ReferentialConstraint>
@@ -129,19 +143,23 @@
           <EntitySet Name="ParkingSpace" EntityType="Self.ParkingSpace" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-          <AssociationSet Name="FK__Booking__SpaceID__2F10007B" Association="Self.FK__Booking__SpaceID__2F10007B">
+          <AssociationSet Name="FK__Booking__SpaceID__2E1BDC42" Association="Self.FK__Booking__SpaceID__2E1BDC42">
             <End Role="ParkingSpace" EntitySet="ParkingSpace" />
             <End Role="Booking" EntitySet="Booking" />
           </AssociationSet>
-          <AssociationSet Name="FK__Booking__UserID__2E1BDC42" Association="Self.FK__Booking__UserID__2E1BDC42">
+          <AssociationSet Name="FK__Booking__UserID__2D27B809" Association="Self.FK__Booking__UserID__2D27B809">
             <End Role="Users" EntitySet="Users" />
             <End Role="Booking" EntitySet="Booking" />
           </AssociationSet>
-          <AssociationSet Name="FK__CheckInOu__CarID__31EC6D26" Association="Self.FK__CheckInOu__CarID__31EC6D26">
+          <AssociationSet Name="FK__CheckInOu__Booki__32E0915F" Association="Self.FK__CheckInOu__Booki__32E0915F">
+            <End Role="Booking" EntitySet="Booking" />
+            <End Role="CheckInOut" EntitySet="CheckInOut" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CheckInOu__CarID__30F848ED" Association="Self.FK__CheckInOu__CarID__30F848ED">
             <End Role="Car" EntitySet="Car" />
             <End Role="CheckInOut" EntitySet="CheckInOut" />
           </AssociationSet>
-          <AssociationSet Name="FK__CheckInOu__Space__32E0915F" Association="Self.FK__CheckInOu__Space__32E0915F">
+          <AssociationSet Name="FK__CheckInOu__Space__31EC6D26" Association="Self.FK__CheckInOu__Space__31EC6D26">
             <End Role="ParkingSpace" EntitySet="ParkingSpace" />
             <End Role="CheckInOut" EntitySet="CheckInOut" />
           </AssociationSet>
@@ -150,38 +168,11 @@
             <End Role="Users" EntitySet="Users" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="SmartParkingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="SmartParkingEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Bookings" EntityType="SmartParkingModel.Booking" />
-          <EntitySet Name="Cars" EntityType="SmartParkingModel.Car" />
-          <EntitySet Name="CheckInOuts" EntityType="SmartParkingModel.CheckInOut" />
-          <EntitySet Name="ParkingSpaces" EntityType="SmartParkingModel.ParkingSpace" />
-          <EntitySet Name="Roles" EntityType="SmartParkingModel.Role" />
-          <EntitySet Name="Users" EntityType="SmartParkingModel.User" />
-          <AssociationSet Name="FK__Booking__SpaceID__2F10007B" Association="SmartParkingModel.FK__Booking__SpaceID__2F10007B">
-            <End Role="ParkingSpace" EntitySet="ParkingSpaces" />
-            <End Role="Booking" EntitySet="Bookings" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Booking__UserID__2E1BDC42" Association="SmartParkingModel.FK__Booking__UserID__2E1BDC42">
-            <End Role="User" EntitySet="Users" />
-            <End Role="Booking" EntitySet="Bookings" />
-          </AssociationSet>
-          <AssociationSet Name="FK__CheckInOu__CarID__31EC6D26" Association="SmartParkingModel.FK__CheckInOu__CarID__31EC6D26">
-            <End Role="Car" EntitySet="Cars" />
-            <End Role="CheckInOut" EntitySet="CheckInOuts" />
-          </AssociationSet>
-          <AssociationSet Name="FK__CheckInOu__Space__32E0915F" Association="SmartParkingModel.FK__CheckInOu__Space__32E0915F">
-            <End Role="ParkingSpace" EntitySet="ParkingSpaces" />
-            <End Role="CheckInOut" EntitySet="CheckInOuts" />
-          </AssociationSet>
-          <AssociationSet Name="FK__Users__RoleID__267ABA7A" Association="SmartParkingModel.FK__Users__RoleID__267ABA7A">
-            <End Role="Role" EntitySet="Roles" />
-            <End Role="User" EntitySet="Users" />
-          </AssociationSet>
-        </EntityContainer>
         <EntityType Name="Booking">
           <Key>
             <PropertyRef Name="BookingID" />
@@ -191,19 +182,20 @@
           <Property Name="SpaceID" Type="Int32" Nullable="false" />
           <Property Name="BookingTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="EmailGust" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="ParkingSpace" Relationship="SmartParkingModel.FK__Booking__SpaceID__2F10007B" FromRole="Booking" ToRole="ParkingSpace" />
-          <NavigationProperty Name="User" Relationship="SmartParkingModel.FK__Booking__UserID__2E1BDC42" FromRole="Booking" ToRole="User" />
+          <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="ParkingSpace" Relationship="Self.FK__Booking__SpaceID__2E1BDC42" FromRole="Booking" ToRole="ParkingSpace" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Booking__UserID__2D27B809" FromRole="Booking" ToRole="Users" />
+          <NavigationProperty Name="CheckInOuts" Relationship="Self.FK__CheckInOu__Booki__32E0915F" FromRole="Booking" ToRole="CheckInOut" />
         </EntityType>
         <EntityType Name="Car">
           <Key>
             <PropertyRef Name="CarID" />
           </Key>
           <Property Name="CarID" Type="Int32" Nullable="false" />
-          <Property Name="CarType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="CarName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="LicensePlate" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="CheckInOuts" Relationship="SmartParkingModel.FK__CheckInOu__CarID__31EC6D26" FromRole="Car" ToRole="CheckInOut" />
+          <Property Name="CarType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CarName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="LicensePlate" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CheckInOuts" Relationship="Self.FK__CheckInOu__CarID__30F848ED" FromRole="Car" ToRole="CheckInOut" />
         </EntityType>
         <EntityType Name="CheckInOut">
           <Key>
@@ -212,46 +204,49 @@
           <Property Name="CheckInOutID" Type="Int32" Nullable="false" />
           <Property Name="CarID" Type="Int32" Nullable="false" />
           <Property Name="SpaceID" Type="Int32" Nullable="false" />
-          <Property Name="CheckInTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="BookingID" Type="Int32" />
+          <Property Name="CheckInTime" Type="DateTime" Precision="3" />
           <Property Name="CheckOutTime" Type="DateTime" Precision="3" />
-          <Property Name="TotalCost" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
-          <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Car" Relationship="SmartParkingModel.FK__CheckInOu__CarID__31EC6D26" FromRole="CheckInOut" ToRole="Car" />
-          <NavigationProperty Name="ParkingSpace" Relationship="SmartParkingModel.FK__CheckInOu__Space__32E0915F" FromRole="CheckInOut" ToRole="ParkingSpace" />
+          <Property Name="TotalCost" Type="Double" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Booking" Relationship="Self.FK__CheckInOu__Booki__32E0915F" FromRole="CheckInOut" ToRole="Booking" />
+          <NavigationProperty Name="Car" Relationship="Self.FK__CheckInOu__CarID__30F848ED" FromRole="CheckInOut" ToRole="Car" />
+          <NavigationProperty Name="ParkingSpace" Relationship="Self.FK__CheckInOu__Space__31EC6D26" FromRole="CheckInOut" ToRole="ParkingSpace" />
         </EntityType>
         <EntityType Name="ParkingSpace">
           <Key>
             <PropertyRef Name="SpaceID" />
           </Key>
           <Property Name="SpaceID" Type="Int32" Nullable="false" />
-          <Property Name="SpaceNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="Availability" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Bookings" Relationship="SmartParkingModel.FK__Booking__SpaceID__2F10007B" FromRole="ParkingSpace" ToRole="Booking" />
-          <NavigationProperty Name="CheckInOuts" Relationship="SmartParkingModel.FK__CheckInOu__Space__32E0915F" FromRole="ParkingSpace" ToRole="CheckInOut" />
+          <Property Name="SpaceNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Availability" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Bookings" Relationship="Self.FK__Booking__SpaceID__2E1BDC42" FromRole="ParkingSpace" ToRole="Booking" />
+          <NavigationProperty Name="CheckInOuts" Relationship="Self.FK__CheckInOu__Space__31EC6D26" FromRole="ParkingSpace" ToRole="CheckInOut" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
             <PropertyRef Name="RoleID" />
           </Key>
           <Property Name="RoleID" Type="Int32" Nullable="false" />
-          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Users" Relationship="SmartParkingModel.FK__Users__RoleID__267ABA7A" FromRole="Role" ToRole="User" />
+          <Property Name="RoleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Users" Relationship="Self.FK__Users__RoleID__267ABA7A" FromRole="Role" ToRole="Users" />
         </EntityType>
         <EntityType Name="User">
           <Key>
             <PropertyRef Name="UserID" />
           </Key>
           <Property Name="UserID" Type="Int32" Nullable="false" />
-          <Property Name="Username" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="RoleID" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Bookings" Relationship="SmartParkingModel.FK__Booking__UserID__2E1BDC42" FromRole="User" ToRole="Booking" />
-          <NavigationProperty Name="Role" Relationship="SmartParkingModel.FK__Users__RoleID__267ABA7A" FromRole="User" ToRole="Role" />
+          <NavigationProperty Name="Bookings" Relationship="Self.FK__Booking__UserID__2D27B809" FromRole="Users" ToRole="Booking" />
+          <NavigationProperty Name="Role" Relationship="Self.FK__Users__RoleID__267ABA7A" FromRole="Users" ToRole="Role" />
         </EntityType>
-        <Association Name="FK__Booking__SpaceID__2F10007B">
-          <End Type="SmartParkingModel.ParkingSpace" Role="ParkingSpace" Multiplicity="1" />
-          <End Type="SmartParkingModel.Booking" Role="Booking" Multiplicity="*" />
+        <Association Name="FK__Booking__SpaceID__2E1BDC42">
+          <End Role="ParkingSpace" Type="Self.ParkingSpace" Multiplicity="1" />
+          <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ParkingSpace">
               <PropertyRef Name="SpaceID" />
@@ -261,11 +256,11 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Booking__UserID__2E1BDC42">
-          <End Type="SmartParkingModel.User" Role="User" Multiplicity="0..1" />
-          <End Type="SmartParkingModel.Booking" Role="Booking" Multiplicity="*" />
+        <Association Name="FK__Booking__UserID__2D27B809">
+          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+          <End Role="Booking" Type="Self.Booking" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="User">
+            <Principal Role="Users">
               <PropertyRef Name="UserID" />
             </Principal>
             <Dependent Role="Booking">
@@ -273,9 +268,21 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CheckInOu__CarID__31EC6D26">
-          <End Type="SmartParkingModel.Car" Role="Car" Multiplicity="1" />
-          <End Type="SmartParkingModel.CheckInOut" Role="CheckInOut" Multiplicity="*" />
+        <Association Name="FK__CheckInOu__Booki__32E0915F">
+          <End Role="Booking" Type="Self.Booking" Multiplicity="0..1" />
+          <End Role="CheckInOut" Type="Self.CheckInOut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Booking">
+              <PropertyRef Name="BookingID" />
+            </Principal>
+            <Dependent Role="CheckInOut">
+              <PropertyRef Name="BookingID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__CheckInOu__CarID__30F848ED">
+          <End Role="Car" Type="Self.Car" Multiplicity="1" />
+          <End Role="CheckInOut" Type="Self.CheckInOut" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Car">
               <PropertyRef Name="CarID" />
@@ -285,9 +292,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__CheckInOu__Space__32E0915F">
-          <End Type="SmartParkingModel.ParkingSpace" Role="ParkingSpace" Multiplicity="1" />
-          <End Type="SmartParkingModel.CheckInOut" Role="CheckInOut" Multiplicity="*" />
+        <Association Name="FK__CheckInOu__Space__31EC6D26">
+          <End Role="ParkingSpace" Type="Self.ParkingSpace" Multiplicity="1" />
+          <End Role="CheckInOut" Type="Self.CheckInOut" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="ParkingSpace">
               <PropertyRef Name="SpaceID" />
@@ -298,18 +305,50 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Users__RoleID__267ABA7A">
-          <End Type="SmartParkingModel.Role" Role="Role" Multiplicity="1" />
-          <End Type="SmartParkingModel.User" Role="User" Multiplicity="*" />
+          <End Role="Role" Type="Self.Role" Multiplicity="1" />
+          <End Role="Users" Type="Self.User" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Role">
               <PropertyRef Name="RoleID" />
             </Principal>
-            <Dependent Role="User">
+            <Dependent Role="Users">
               <PropertyRef Name="RoleID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        </Schema>
+        <EntityContainer Name="SmartParkingEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bookings" EntityType="Self.Booking" />
+          <EntitySet Name="Cars" EntityType="Self.Car" />
+          <EntitySet Name="CheckInOuts" EntityType="Self.CheckInOut" />
+          <EntitySet Name="ParkingSpaces" EntityType="Self.ParkingSpace" />
+          <EntitySet Name="Roles" EntityType="Self.Role" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK__Booking__SpaceID__2E1BDC42" Association="Self.FK__Booking__SpaceID__2E1BDC42">
+            <End Role="ParkingSpace" EntitySet="ParkingSpaces" />
+            <End Role="Booking" EntitySet="Bookings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Booking__UserID__2D27B809" Association="Self.FK__Booking__UserID__2D27B809">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Booking" EntitySet="Bookings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CheckInOu__Booki__32E0915F" Association="Self.FK__CheckInOu__Booki__32E0915F">
+            <End Role="Booking" EntitySet="Bookings" />
+            <End Role="CheckInOut" EntitySet="CheckInOuts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CheckInOu__CarID__30F848ED" Association="Self.FK__CheckInOu__CarID__30F848ED">
+            <End Role="Car" EntitySet="Cars" />
+            <End Role="CheckInOut" EntitySet="CheckInOuts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__CheckInOu__Space__31EC6D26" Association="Self.FK__CheckInOu__Space__31EC6D26">
+            <End Role="ParkingSpace" EntitySet="ParkingSpaces" />
+            <End Role="CheckInOut" EntitySet="CheckInOuts" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Users__RoleID__267ABA7A" Association="Self.FK__Users__RoleID__267ABA7A">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -318,63 +357,65 @@
           <EntitySetMapping Name="Bookings">
             <EntityTypeMapping TypeName="SmartParkingModel.Booking">
               <MappingFragment StoreEntitySet="Booking">
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="EmailGust" ColumnName="EmailGust" />
-                <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
-                <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
-                <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
+                <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+                <ScalarProperty Name="EmailGust" ColumnName="EmailGust" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Cars">
             <EntityTypeMapping TypeName="SmartParkingModel.Car">
               <MappingFragment StoreEntitySet="Car">
-                <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
-                <ScalarProperty Name="CarName" ColumnName="CarName" />
-                <ScalarProperty Name="CarType" ColumnName="CarType" />
                 <ScalarProperty Name="CarID" ColumnName="CarID" />
+                <ScalarProperty Name="CarType" ColumnName="CarType" />
+                <ScalarProperty Name="CarName" ColumnName="CarName" />
+                <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CheckInOuts">
             <EntityTypeMapping TypeName="SmartParkingModel.CheckInOut">
               <MappingFragment StoreEntitySet="CheckInOut">
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
-                <ScalarProperty Name="CheckOutTime" ColumnName="CheckOutTime" />
-                <ScalarProperty Name="CheckInTime" ColumnName="CheckInTime" />
-                <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
-                <ScalarProperty Name="CarID" ColumnName="CarID" />
                 <ScalarProperty Name="CheckInOutID" ColumnName="CheckInOutID" />
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+                <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
+                <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+                <ScalarProperty Name="CheckInTime" ColumnName="CheckInTime" />
+                <ScalarProperty Name="CheckOutTime" ColumnName="CheckOutTime" />
+                <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ParkingSpaces">
             <EntityTypeMapping TypeName="SmartParkingModel.ParkingSpace">
               <MappingFragment StoreEntitySet="ParkingSpace">
-                <ScalarProperty Name="Availability" ColumnName="Availability" />
-                <ScalarProperty Name="SpaceNumber" ColumnName="SpaceNumber" />
                 <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
+                <ScalarProperty Name="SpaceNumber" ColumnName="SpaceNumber" />
+                <ScalarProperty Name="Availability" ColumnName="Availability" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Roles">
             <EntityTypeMapping TypeName="SmartParkingModel.Role">
               <MappingFragment StoreEntitySet="Role">
-                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
                 <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="SmartParkingModel.User">
               <MappingFragment StoreEntitySet="Users">
-                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="RoleID" ColumnName="RoleID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

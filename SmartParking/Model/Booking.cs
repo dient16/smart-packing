@@ -14,6 +14,12 @@ namespace SmartParking.Model
     
     public partial class Booking
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Booking()
+        {
+            this.CheckInOuts = new HashSet<CheckInOut>();
+        }
+    
         public int BookingID { get; set; }
         public Nullable<int> UserID { get; set; }
         public int SpaceID { get; set; }
@@ -23,5 +29,7 @@ namespace SmartParking.Model
     
         public virtual ParkingSpace ParkingSpace { get; set; }
         public virtual User User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CheckInOut> CheckInOuts { get; set; }
     }
 }

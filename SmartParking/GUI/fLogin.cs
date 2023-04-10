@@ -13,13 +13,19 @@ namespace SmartParking
 {
     public partial class fLogin :  MetroFramework.Forms.MetroForm
     {
-        private Form _this;
+        private fLogin _this;
+
+        [Obsolete]
         public fLogin()
         {
             InitializeComponent();
             _this = this;
         }
-
+        private void UpdateText()
+        {
+            txt_Username.Text = "";
+            txt_Password.Text = "";
+        }
         [Obsolete]
         private void btn_login_Click(object sender, EventArgs e)
         {
@@ -37,6 +43,7 @@ namespace SmartParking
                         fAdminManager fAdminManager = new fAdminManager();
                         fAdminManager.ShowDialog();
                         HandleDataDB.Ins.SetAccount(null);
+                        UpdateText();
                         _this.Show();
                     }
                     else if(user.RoleID == 2)
@@ -44,6 +51,7 @@ namespace SmartParking
                         fManagerCheckInOut fParkingManager = new fManagerCheckInOut();
                         fParkingManager.ShowDialog();
                         HandleDataDB.Ins.SetAccount(null);
+                        UpdateText();
                         _this.Show();
                     }
                     else if(user.RoleID == 3)
@@ -51,6 +59,7 @@ namespace SmartParking
                         fParkingSpace fBooking = new fParkingSpace();
                         fBooking.ShowDialog();
                         HandleDataDB.Ins.SetAccount(null);
+                        UpdateText();
                         _this.Show();
                     }
                 }

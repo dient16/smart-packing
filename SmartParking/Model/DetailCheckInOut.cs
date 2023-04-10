@@ -8,7 +8,7 @@ namespace SmartParking.Model
 {
     public class DetailCheckInOut
     {
-        public DetailCheckInOut(int _CardID, string _LicensePlate, string _SpaceName, DateTime _CheckInTime, DateTime? _CheckOUTTime, decimal _TotalCost, string _Status)
+        public DetailCheckInOut(int _CardID, string _LicensePlate, string _SpaceName, DateTime? _CheckInTime, DateTime? _CheckOUTTime, double _TotalCost, string _Status)
         {
             this.CardID = _CardID;
             this.LicensePlate = _LicensePlate;
@@ -43,9 +43,9 @@ namespace SmartParking.Model
             set { _SpaceName = value; }
         }
 
-        private DateTime _CheckInTime;
+        private DateTime? _CheckInTime;
 
-        public DateTime CheckInTime
+        public DateTime? CheckInTime
         {
             get { return _CheckInTime; }
             set { _CheckInTime = value; }
@@ -57,8 +57,8 @@ namespace SmartParking.Model
             get { return _CheckOUTTime; }
             set { _CheckOUTTime = value; }
         }
-        private decimal _TotalCost;
-        public decimal TotalCost
+        private double _TotalCost;
+        public double TotalCost
         {
             get { return _TotalCost; }
             set { _TotalCost = value; }

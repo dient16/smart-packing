@@ -24,10 +24,7 @@ namespace SmartParking.Model
             Grid_CheckInOut.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             foreach (var item in List)
             {
-                string status = item.Status;
-                if (item.Status == "Ðã d? xe")
-                    status = "Đã đỗ xe";
-                Grid_CheckInOut.Rows.Add(item.CardID, item.LicensePlate, item.SpaceName, item.CheckInTime, item.CheckOUTTime, item.TotalCost, status);
+                Grid_CheckInOut.Rows.Add(item.CardID, item.LicensePlate, item.SpaceName, item.CheckInTime, item.CheckOUTTime, item.TotalCost, item.Status);
             }
             
         }

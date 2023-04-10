@@ -26,6 +26,7 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        [System.Obsolete]
         private void InitializeComponent()
         {
             this.htmlPanel1 = new MetroFramework.Drawing.Html.HtmlPanel();
@@ -86,7 +87,7 @@
             this.txt_Password.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txt_Password.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Password.TabIndex = 2;
-            this.txt_Password.Text = "emp123";
+            this.txt_Password.Text = "123";
             // 
             // htmlLabel2
             // 

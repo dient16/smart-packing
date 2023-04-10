@@ -17,11 +17,13 @@ namespace SmartParking.Model
         public int CheckInOutID { get; set; }
         public int CarID { get; set; }
         public int SpaceID { get; set; }
-        public System.DateTime CheckInTime { get; set; }
+        public Nullable<int> BookingID { get; set; }
+        public Nullable<System.DateTime> CheckInTime { get; set; }
         public Nullable<System.DateTime> CheckOutTime { get; set; }
-        public decimal TotalCost { get; set; }
+        public double TotalCost { get; set; }
         public string Status { get; set; }
     
+        public virtual Booking Booking { get; set; }
         public virtual Car Car { get; set; }
         public virtual ParkingSpace ParkingSpace { get; set; }
     }
