@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SmartParking.Model;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -8,16 +9,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SmartParking.Model;
-namespace SmartParking
+
+namespace SmartParking.GUI.UserControls
 {
-    public partial class fParkingSpace : MetroFramework.Forms.MetroForm
+    public partial class UC_ParkingSpace : UserControl
     {
-        private static fParkingSpace _instance;
-        public fParkingSpace()
+        private static UC_ParkingSpace _instance;
+        public UC_ParkingSpace()
         {
             InitializeComponent();
-            //flp_SpaceA.HorizontalScroll.Maximum = 800;
             _instance = this;
             LoadParkingSpace(flp_SpaceA, 'A');
             LoadParkingSpace(flp_SpaceB, 'B');
@@ -39,11 +39,11 @@ namespace SmartParking
         {
             flp.Controls.Clear();
 
-            ObservableCollection<ParkingSpace>  ls = HandleDataDB.Ins.GetListParkingSpace();
+            ObservableCollection<ParkingSpace> ls = HandleDataDB.Ins.GetListParkingSpace();
 
             foreach (var item in ls)
             {
-                if(item.SpaceNumber.ToCharArray()[item.SpaceNumber.ToCharArray().Length -1 ] == zone)
+                if (item.SpaceNumber.ToCharArray()[item.SpaceNumber.ToCharArray().Length - 1] == zone)
                 {
                     Krypton.Toolkit.KryptonButton btn = new Krypton.Toolkit.KryptonButton() { Width = 76, Height = 89 };
                     btn.Click += Btn_Click;
@@ -81,45 +81,43 @@ namespace SmartParking
                             break;
                     }
                     flp.Controls.Add(btn);
-                }  
-            }        
+                }
+            }
+        }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type, 1674, 908);
         }
         private void BookingSpace(ParkingSpace space)
         {
             fBooking fBooking = new fBooking();
-            int BookingID = HandleDataDB.Ins.GetCountBooking() + 1;
-            
+            //int BookingID = HandleDataDB.Ins.GetCountBooking() + 1;
+
             var p_wrap = GetChildrenControl("p_wrap", fBooking);
             var panel1 = GetChildrenControl("panel1", p_wrap);
             var panel2 = GetChildrenControl("panel2", p_wrap);
-            var panel3 = GetChildrenControl("panel3", p_wrap);
             var txt_id = GetChildrenControl("txb_BookingID", panel1);
-            txt_id.Text = BookingID.ToString();
+
             txt_id.Enabled = false;
             GetChildrenControl("txb_parkingspace", panel1).Text = space.SpaceNumber;
             var txb_totalcost = GetChildrenControl("txb_totalcost", panel1);
             txb_totalcost.Enabled = false;
             Krypton.Toolkit.KryptonComboBox cb_CarName = GetChildrenControl("cb_CarName", panel1) as Krypton.Toolkit.KryptonComboBox;
             cb_CarName.DataSource = new List<string>() { "Ô tô", "Xe máy" };
-            var txb_LicensePlate = GetChildrenControl("txb_LicensePlate", panel1);                  
-            var txb_EmailGuest = GetChildrenControl("txb_EmailGuest", panel2);
-            var btn_Booking = GetChildrenControl("btn_Booking", panel3);
+            var txb_LicensePlate = GetChildrenControl("txb_LicensePlate", panel1);
+            var btn_Booking = GetChildrenControl("btn_Booking", panel2);
 
             var paneluser = GetChildrenControl("Panel_User", p_wrap);
-            if (HandleDataDB.Ins.Accconut != null)
-            {
-                var txb_EmailUser = GetChildrenControl("txb_EmailUser", paneluser);
-                txb_EmailUser.Text = HandleDataDB.Ins.Accconut.Email;
-                txb_EmailUser.Enabled = false;
-                var txb_UserName = GetChildrenControl("txb_UserName", paneluser);
-                txb_UserName.Text = HandleDataDB.Ins.Accconut.Username;
-                txb_UserName.Enabled = false;
-                p_wrap.Controls.Remove(panel2);
-            }
-            else
-            {
-                p_wrap.Controls.Remove(paneluser);
-            }           
+            var txb_EmailUser = GetChildrenControl("txb_EmailUser", panel1);
+            txb_EmailUser.Text = HandleDataDB.Ins.Accconut.Email;
+            txb_EmailUser.Enabled = false;
+            var txb_UserName = GetChildrenControl("txb_UserName", panel1);
+            txb_UserName.Text = HandleDataDB.Ins.Accconut.Username;
+            txb_UserName.Enabled = false;
+            var txb_DisplayName = GetChildrenControl("txb_DisplayName", panel1);
+            txb_DisplayName.Text = HandleDataDB.Ins.Accconut.DisplayName;
+            txb_UserName.Enabled = false;
             btn_Booking.Tag = fBooking;
             if (btn_Booking != null)
                 btn_Booking.Click += (sender, e) =>
@@ -132,64 +130,51 @@ namespace SmartParking
                     {
                         Car newCar = new Car()
                         {
-                            CarID = HandleDataDB.Ins.GetCountCar() + 1,
                             CarType = typeCar,
                             CarName = cb_CarName.SelectedValue.ToString(),
                             LicensePlate = txb_LicensePlate.Text
                         };
                         car = newCar;
                         HandleDataDB.Ins.InsertCar(car);
-
                     }
                     Booking booking = null;
-                    if (HandleDataDB.Ins.Accconut != null)
+                    var caR = HandleDataDB.Ins.GetCarbyLicensePlate(car.LicensePlate);
+                    booking = new Booking()
                     {
-                        booking = new Booking()
-                        {
-                            BookingID = BookingID,
-                            UserID = HandleDataDB.Ins.Accconut.UserID,
-                            SpaceID = space.SpaceID,
-                            BookingTime = DateTime.Now,
-                            Status = "Đã đặt chỗ"
-                        };
-                    }
-                    else
-                    {
-                        booking = new Booking()
-                        {
-                            BookingID = BookingID,                          
-                            SpaceID = space.SpaceID,
-                            EmailGust = txb_EmailGuest.Text,
-                            BookingTime = DateTime.Now,
-                            Status = "Ðã đặt chỗ"
-                        };
-
-                    }
+                        UserID = HandleDataDB.Ins.Accconut.UserID,
+                        CarID = caR.CarID,
+                        SpaceID = space.SpaceID,
+                        BookingTime = DateTime.Now,
+                        Status = "Đã đặt chỗ"
+                    };
+                    txt_id.Text = booking.BookingID.ToString();
                     HandleDataDB.Ins.InsertBooking(booking);
                     ///update trạng thái vị trí đã đặt
                     space.Availability = "Ðã đặt chỗ";
+                    DataProvider.Ins.DB.SaveChanges();
+                    var bookingID = HandleDataDB.Ins.GetBookingByparkingspace(space.SpaceNumber).BookingID;         
                     CheckInOut checkInOut = new CheckInOut()
                     {
-                        CheckInOutID = DataProvider.Ins.DB.CheckInOuts.Where(x => true).Count() + 1,
                         CarID = car.CarID,
                         SpaceID = space.SpaceID,
-                        BookingID = BookingID,
+                        BookingID = bookingID,
                         CheckInTime = null,
                         CheckOutTime = null,
                         TotalCost = Convert.ToDouble(txb_totalcost.Text),
                         Status = "Ðã đặt chỗ"
-                    };                  
+                    };
                     if (HandleDataDB.Ins.InsertCheckInOut(checkInOut))
                     {
-                        MessageBox.Show("Chúc quý khách ngon miệng :))))");
+                        this.Alert("Đặt chỗ thành công!!!!", Form_Alert.enmType.Success);
                         LoadParkingSpace(flp_SpaceA, 'A');
                         LoadParkingSpace(flp_SpaceB, 'B');
                         LoadParkingSpace(flp_SpaceC, 'C');
                         if ((sender as Control) != null)
                             ((sender as Control).Tag as fBooking).Close();
-                    }else
+                    }
+                    else
                     {
-                        MessageBox.Show("Đặt chỗ thất bại");
+                        this.Alert("Đặt chỗ thành thất bại", Form_Alert.enmType.Error);
                         if ((sender as Control) != null)
                             ((sender as Control).Tag as fBooking).Close();
                     }
@@ -201,29 +186,15 @@ namespace SmartParking
             var spaceName = (sender as Krypton.Toolkit.KryptonButton).Tag as ParkingSpace;
             if (spaceName.Availability == "Đang đỗ xe")
             {
-                MessageBox.Show("Chỗ này có chủ rồi");
+                this.Alert("Chỗ này có chủ rồi", Form_Alert.enmType.Error);
                 return;
             }
             if (spaceName.Availability == "Ðã đặt chỗ")
             {
-                MessageBox.Show("Chỗ này có có người đặt rồi ba");
+                this.Alert("Chỗ này có có người đặt rồi", Form_Alert.enmType.Error);
                 return;
             }
             BookingSpace(spaceName);
-            /*char zone = spaceName.SpaceNumber.ToCharArray()[spaceName.SpaceNumber.ToCharArray().Length - 1];
-            FlowLayoutPanel flp = null;
-            if(zone == 'A')
-            {
-                flp = flp_SpaceA;
-            }
-            else if(zone == 'B')
-            {
-                flp = flp_SpaceB;
-            }
-            else if (zone == 'C')
-            {
-                flp = flp_SpaceC;
-            }*/
         }
     }
 }

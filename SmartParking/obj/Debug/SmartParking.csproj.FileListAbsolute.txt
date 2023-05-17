@@ -31,8 +31,16 @@ C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MI
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\bin\Debug\Emgu.CV.ML.xml
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\bin\Debug\Emgu.CV.UI.xml
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\bin\Debug\Emgu.Util.xml
-C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.fParkingSpace.resources
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.fBooking.resources
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.fInputCardID.resources
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.Model.fDetailCheckInOut.resources
 C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.fAdminManager.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.UserControls.UC_Dashboard.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.UserControls.UC_Customer.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.fEditUser.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.Form_Alert.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.fCustomer.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.UserControls.UC_ParkingSpace.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.UserControls.UC_BookingHistory.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.UserControls.UC_Employee.resources
+C:\WorkSpace\LearnDocument\2022-2023\Ki_6\CHUYEN_DE_HE_THONG_GIAO_THONG_THONG_MINH\SmartParking\SmartParking\obj\Debug\SmartParking.GUI.fAddNewUser.resources

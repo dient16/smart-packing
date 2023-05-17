@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SmartParking.Model;
+using SmartParking.GUI;
+
 namespace SmartParking
 {
     public partial class fLogin :  MetroFramework.Forms.MetroForm
@@ -20,6 +22,11 @@ namespace SmartParking
         {
             InitializeComponent();
             _this = this;
+        }
+        public void Alert(string msg, Form_Alert.enmType type)
+        {
+            Form_Alert frm = new Form_Alert();
+            frm.showAlert(msg, type, _this.Location.X + _this.Size.Width, _this.Location.Y + _this.Size.Height);
         }
         private void UpdateText()
         {
@@ -45,6 +52,7 @@ namespace SmartParking
                         HandleDataDB.Ins.SetAccount(null);
                         UpdateText();
                         _this.Show();
+                        this.Alert("Đã đăng xuất", Form_Alert.enmType.Success);
                     }
                     else if(user.RoleID == 2)
                     {
@@ -56,11 +64,12 @@ namespace SmartParking
                     }
                     else if(user.RoleID == 3)
                     {
-                        fParkingSpace fBooking = new fParkingSpace();
-                        fBooking.ShowDialog();
+                        fCustomer fcustomer = new fCustomer();
+                        fcustomer.ShowDialog();
                         HandleDataDB.Ins.SetAccount(null);
                         UpdateText();
                         _this.Show();
+                        this.Alert("Đã đăng xuất", Form_Alert.enmType.Success);
                     }
                 }
                 
@@ -78,14 +87,6 @@ namespace SmartParking
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void btn_Guest_Click(object sender, EventArgs e)
-        {
-            fParkingSpace fBooking = new fParkingSpace();
-            _this.Hide();
-            fBooking.ShowDialog();
-            _this.Show();
         }
     }
 }

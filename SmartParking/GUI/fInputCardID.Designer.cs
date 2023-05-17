@@ -38,9 +38,9 @@
             // 
             // 
             this.txb_SelectcardID.CustomButton.Image = null;
-            this.txb_SelectcardID.CustomButton.Location = new System.Drawing.Point(92, 1);
+            this.txb_SelectcardID.CustomButton.Location = new System.Drawing.Point(84, 2);
             this.txb_SelectcardID.CustomButton.Name = "";
-            this.txb_SelectcardID.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txb_SelectcardID.CustomButton.Size = new System.Drawing.Size(27, 27);
             this.txb_SelectcardID.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txb_SelectcardID.CustomButton.TabIndex = 1;
             this.txb_SelectcardID.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -67,21 +67,22 @@
             // btn_Ok
             // 
             this.btn_Ok.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_Ok.CornerRoundingRadius = -1F;
+            this.btn_Ok.CornerRoundingRadius = 6F;
             this.btn_Ok.Location = new System.Drawing.Point(143, 72);
             this.btn_Ok.Name = "btn_Ok";
             this.btn_Ok.Size = new System.Drawing.Size(32, 32);
-            this.btn_Ok.StateCommon.Back.Color1 = System.Drawing.Color.Transparent;
+            this.btn_Ok.StateCommon.Back.Color1 = System.Drawing.Color.LawnGreen;
             this.btn_Ok.StateCommon.Back.Color2 = System.Drawing.Color.Transparent;
-            this.btn_Ok.StateCommon.Back.Image = global::SmartParking.Resource.checkIcon;
             this.btn_Ok.StateCommon.Back.ImageStyle = Krypton.Toolkit.PaletteImageStyle.Stretch;
-            this.btn_Ok.StateCommon.Border.Color1 = System.Drawing.Color.Transparent;
-            this.btn_Ok.StateCommon.Border.Color2 = System.Drawing.Color.Transparent;
+            this.btn_Ok.StateCommon.Border.Color1 = System.Drawing.Color.Black;
+            this.btn_Ok.StateCommon.Border.Color2 = System.Drawing.Color.Black;
             this.btn_Ok.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btn_Ok.StateCommon.Border.Rounding = 6F;
+            this.btn_Ok.StateCommon.Border.Width = 1;
             this.btn_Ok.TabIndex = 1;
-            this.btn_Ok.Values.Text = "";
+            this.btn_Ok.Values.Text = "OK";
             // 
             // fInputCardID
             // 

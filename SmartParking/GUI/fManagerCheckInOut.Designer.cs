@@ -39,7 +39,7 @@
             this.kryptonGroup1 = new Krypton.Toolkit.KryptonGroup();
             this.pictureBox_miniIN = new System.Windows.Forms.PictureBox();
             this.kryptonPanel10 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton1 = new Krypton.Toolkit.KryptonButton();
+            this.btn_CheckIn = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel3 = new Krypton.Toolkit.KryptonLabel();
             this.txb_TimeCheckIn = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel2 = new Krypton.Toolkit.KryptonLabel();
@@ -56,7 +56,7 @@
             this.kryptonGroup4 = new Krypton.Toolkit.KryptonGroup();
             this.pictureBox_miniOUT = new System.Windows.Forms.PictureBox();
             this.kryptonPanel11 = new Krypton.Toolkit.KryptonPanel();
-            this.kryptonButton2 = new Krypton.Toolkit.KryptonButton();
+            this.btn_CheckOut = new Krypton.Toolkit.KryptonButton();
             this.kryptonLabel4 = new Krypton.Toolkit.KryptonLabel();
             this.txb_TimeCheckOut = new Krypton.Toolkit.KryptonTextBox();
             this.kryptonLabel5 = new Krypton.Toolkit.KryptonLabel();
@@ -285,7 +285,7 @@
             // 
             // kryptonPanel10
             // 
-            this.kryptonPanel10.Controls.Add(this.kryptonButton1);
+            this.kryptonPanel10.Controls.Add(this.btn_CheckIn);
             this.kryptonPanel10.Controls.Add(this.kryptonLabel3);
             this.kryptonPanel10.Controls.Add(this.txb_TimeCheckIn);
             this.kryptonPanel10.Controls.Add(this.kryptonLabel2);
@@ -297,30 +297,30 @@
             this.kryptonPanel10.Size = new System.Drawing.Size(449, 163);
             this.kryptonPanel10.TabIndex = 2;
             // 
-            // kryptonButton1
+            // btn_CheckIn
             // 
-            this.kryptonButton1.CornerRoundingRadius = 7F;
-            this.kryptonButton1.Location = new System.Drawing.Point(409, 108);
-            this.kryptonButton1.Name = "kryptonButton1";
-            this.kryptonButton1.Size = new System.Drawing.Size(37, 32);
-            this.kryptonButton1.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
-            this.kryptonButton1.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton1.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
-            this.kryptonButton1.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton1.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_CheckIn.CornerRoundingRadius = 7F;
+            this.btn_CheckIn.Location = new System.Drawing.Point(409, 108);
+            this.btn_CheckIn.Name = "btn_CheckIn";
+            this.btn_CheckIn.Size = new System.Drawing.Size(37, 32);
+            this.btn_CheckIn.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
+            this.btn_CheckIn.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_CheckIn.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
+            this.btn_CheckIn.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
+            this.btn_CheckIn.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton1.StateCommon.Border.Rounding = 7F;
-            this.kryptonButton1.StateCommon.Border.Width = 1;
-            this.kryptonButton1.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton1.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton1.TabIndex = 9;
-            this.kryptonButton1.Values.Text = "...";
-            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            this.btn_CheckIn.StateCommon.Border.Rounding = 7F;
+            this.btn_CheckIn.StateCommon.Border.Width = 1;
+            this.btn_CheckIn.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.btn_CheckIn.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.btn_CheckIn.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckIn.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_CheckIn.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btn_CheckIn.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckIn.TabIndex = 9;
+            this.btn_CheckIn.Values.Text = "...";
+            this.btn_CheckIn.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
             // kryptonLabel3
             // 
@@ -543,7 +543,7 @@
             // 
             // kryptonPanel11
             // 
-            this.kryptonPanel11.Controls.Add(this.kryptonButton2);
+            this.kryptonPanel11.Controls.Add(this.btn_CheckOut);
             this.kryptonPanel11.Controls.Add(this.kryptonLabel4);
             this.kryptonPanel11.Controls.Add(this.txb_TimeCheckOut);
             this.kryptonPanel11.Controls.Add(this.kryptonLabel5);
@@ -555,30 +555,30 @@
             this.kryptonPanel11.Size = new System.Drawing.Size(449, 163);
             this.kryptonPanel11.TabIndex = 9;
             // 
-            // kryptonButton2
+            // btn_CheckOut
             // 
-            this.kryptonButton2.CornerRoundingRadius = 7F;
-            this.kryptonButton2.Location = new System.Drawing.Point(412, 111);
-            this.kryptonButton2.Name = "kryptonButton2";
-            this.kryptonButton2.Size = new System.Drawing.Size(34, 32);
-            this.kryptonButton2.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
-            this.kryptonButton2.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton2.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
-            this.kryptonButton2.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
-            this.kryptonButton2.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.btn_CheckOut.CornerRoundingRadius = 7F;
+            this.btn_CheckOut.Location = new System.Drawing.Point(412, 111);
+            this.btn_CheckOut.Name = "btn_CheckOut";
+            this.btn_CheckOut.Size = new System.Drawing.Size(34, 32);
+            this.btn_CheckOut.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
+            this.btn_CheckOut.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
+            this.btn_CheckOut.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
+            this.btn_CheckOut.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
+            this.btn_CheckOut.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.kryptonButton2.StateCommon.Border.Rounding = 7F;
-            this.kryptonButton2.StateCommon.Border.Width = 1;
-            this.kryptonButton2.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.kryptonButton2.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kryptonButton2.TabIndex = 10;
-            this.kryptonButton2.Values.Text = "...";
-            this.kryptonButton2.Click += new System.EventHandler(this.kryptonButton2_Click);
+            this.btn_CheckOut.StateCommon.Border.Rounding = 7F;
+            this.btn_CheckOut.StateCommon.Border.Width = 1;
+            this.btn_CheckOut.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.btn_CheckOut.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.btn_CheckOut.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckOut.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btn_CheckOut.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btn_CheckOut.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CheckOut.TabIndex = 10;
+            this.btn_CheckOut.Values.Text = "...";
+            this.btn_CheckOut.Click += new System.EventHandler(this.kryptonButton2_Click);
             // 
             // kryptonLabel4
             // 
@@ -1316,12 +1316,12 @@
         private Krypton.Toolkit.KryptonTextBox txt_hourOUT;
         private Krypton.Toolkit.KryptonTextBox txt_dayIN;
         private Krypton.Toolkit.KryptonTextBox txt_hourIN;
-        private Krypton.Toolkit.KryptonButton kryptonButton2;
+        private Krypton.Toolkit.KryptonButton btn_CheckOut;
         private System.Windows.Forms.PictureBox pc_Statusicon;
         private Krypton.Toolkit.KryptonPanel kryptonPanel8;
         private Krypton.Toolkit.KryptonGroup kryptonGroup1;
         private Krypton.Toolkit.KryptonPanel kryptonPanel10;
-        private Krypton.Toolkit.KryptonButton kryptonButton1;
+        private Krypton.Toolkit.KryptonButton btn_CheckIn;
         private Krypton.Toolkit.KryptonLabel kryptonLabel3;
         private Krypton.Toolkit.KryptonTextBox txb_TimeCheckIn;
         private Krypton.Toolkit.KryptonLabel kryptonLabel2;

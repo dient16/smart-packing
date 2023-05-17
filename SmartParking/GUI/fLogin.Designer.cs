@@ -38,7 +38,6 @@
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.htmlPanel4 = new MetroFramework.Drawing.Html.HtmlPanel();
             this.btn_exit = new Krypton.Toolkit.KryptonButton();
-            this.btn_Guest = new Krypton.Toolkit.KryptonButton();
             this.btn_login = new Krypton.Toolkit.KryptonButton();
             this.htmlPanel1.SuspendLayout();
             this.htmlPanel3.SuspendLayout();
@@ -129,7 +128,7 @@
             this.txt_Username.StateCommon.Content.Color1 = System.Drawing.Color.Gray;
             this.txt_Username.StateCommon.Content.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_Username.TabIndex = 1;
-            this.txt_Username.Text = "employee1";
+            this.txt_Username.Text = "admin";
             // 
             // htmlLabel1
             // 
@@ -150,7 +149,6 @@
             this.htmlPanel4.AutoScrollMinSize = new System.Drawing.Size(340, 0);
             this.htmlPanel4.BackColor = System.Drawing.SystemColors.Window;
             this.htmlPanel4.Controls.Add(this.btn_exit);
-            this.htmlPanel4.Controls.Add(this.btn_Guest);
             this.htmlPanel4.Controls.Add(this.btn_login);
             this.htmlPanel4.Location = new System.Drawing.Point(15, 108);
             this.htmlPanel4.Name = "htmlPanel4";
@@ -160,7 +158,7 @@
             // btn_exit
             // 
             this.btn_exit.CornerRoundingRadius = 7F;
-            this.btn_exit.Location = new System.Drawing.Point(219, 3);
+            this.btn_exit.Location = new System.Drawing.Point(185, 3);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(90, 32);
             this.btn_exit.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
@@ -182,35 +180,10 @@
             this.btn_exit.Values.Text = "Exit";
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // btn_Guest
-            // 
-            this.btn_Guest.CornerRoundingRadius = 7F;
-            this.btn_Guest.Location = new System.Drawing.Point(113, 3);
-            this.btn_Guest.Name = "btn_Guest";
-            this.btn_Guest.Size = new System.Drawing.Size(90, 32);
-            this.btn_Guest.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
-            this.btn_Guest.StateCommon.Back.Color2 = System.Drawing.Color.Blue;
-            this.btn_Guest.StateCommon.Border.Color1 = System.Drawing.Color.Blue;
-            this.btn_Guest.StateCommon.Border.Color2 = System.Drawing.Color.Blue;
-            this.btn_Guest.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btn_Guest.StateCommon.Border.Rounding = 7F;
-            this.btn_Guest.StateCommon.Border.Width = 1;
-            this.btn_Guest.StateCommon.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.btn_Guest.StateCommon.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.btn_Guest.StateCommon.Content.LongText.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guest.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btn_Guest.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btn_Guest.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Guest.TabIndex = 1;
-            this.btn_Guest.Values.Text = "Guest";
-            this.btn_Guest.Click += new System.EventHandler(this.btn_Guest_Click);
-            // 
             // btn_login
             // 
             this.btn_login.CornerRoundingRadius = 7F;
-            this.btn_login.Location = new System.Drawing.Point(3, 3);
+            this.btn_login.Location = new System.Drawing.Point(55, 3);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(90, 32);
             this.btn_login.StateCommon.Back.Color1 = System.Drawing.Color.Blue;
@@ -266,7 +239,6 @@
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel1;
         private MetroFramework.Drawing.Html.HtmlPanel htmlPanel4;
         private Krypton.Toolkit.KryptonButton btn_exit;
-        private Krypton.Toolkit.KryptonButton btn_Guest;
         private Krypton.Toolkit.KryptonButton btn_login;
     }
 }

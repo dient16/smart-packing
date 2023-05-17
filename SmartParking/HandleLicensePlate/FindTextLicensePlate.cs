@@ -69,7 +69,6 @@ namespace SmartParking.HandleLicensePlate
         public TesseractProcessor ch_tesseract = null;
         public TesseractProcessor num_tesseract = null;
         private string m_path = Application.StartupPath + @"\data\";
-        private List<string> lstimages = new List<string>();
         private const string m_lang = "eng";
         #endregion
 
@@ -81,7 +80,6 @@ namespace SmartParking.HandleLicensePlate
             FileStream fs = new FileStream(urlImage, FileMode.Open, FileAccess.Read);
             Image img = Image.FromStream(fs);
             Bitmap image = new Bitmap(img);
-            //pictureBox2.Image = image;
             fs.Close();
 
             FindLicensePlate(image, out Plate_Draw);
@@ -127,7 +125,6 @@ namespace SmartParking.HandleLicensePlate
                 src = src.Dilate(2);
             }
             Bitmap image = src.ToBitmap();
-
             TesseractProcessor ocr;
             if (isFull)
                 ocr = full_tesseract;
@@ -135,7 +132,6 @@ namespace SmartParking.HandleLicensePlate
                 ocr = num_tesseract;
             else
                 ocr = ch_tesseract;
-
             int cou = 0;
             ocr.Clear();
             ocr.ClearAdaptiveClassifier();
@@ -273,7 +269,6 @@ namespace SmartParking.HandleLicensePlate
                 }
                 int x = 12;
                 int c_x = 0;
-
                 for (int i = 0; i < up.Count; i++)
                 {
                     Bitmap ch = grayframe.Clone(up[i], grayframe.PixelFormat);

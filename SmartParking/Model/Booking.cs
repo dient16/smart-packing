@@ -21,12 +21,13 @@ namespace SmartParking.Model
         }
     
         public int BookingID { get; set; }
-        public Nullable<int> UserID { get; set; }
+        public int UserID { get; set; }
         public int SpaceID { get; set; }
         public System.DateTime BookingTime { get; set; }
-        public string EmailGust { get; set; }
+        public int CarID { get; set; }
         public string Status { get; set; }
     
+        public virtual Car Car { get; set; }
         public virtual ParkingSpace ParkingSpace { get; set; }
         public virtual User User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -17,6 +17,7 @@ namespace SmartParking.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Car()
         {
+            this.Bookings = new HashSet<Booking>();
             this.CheckInOuts = new HashSet<CheckInOut>();
         }
     
@@ -25,6 +26,8 @@ namespace SmartParking.Model
         public string CarName { get; set; }
         public string LicensePlate { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Booking> Bookings { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CheckInOut> CheckInOuts { get; set; }
     }

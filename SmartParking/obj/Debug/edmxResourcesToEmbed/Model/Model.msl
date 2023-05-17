@@ -4,65 +4,65 @@
     <EntitySetMapping Name="Bookings">
       <EntityTypeMapping TypeName="SmartParkingModel.Booking">
         <MappingFragment StoreEntitySet="Booking">
-          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
-          <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
-          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
-          <ScalarProperty Name="EmailGust" ColumnName="EmailGust" />
           <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CarID" ColumnName="CarID" />
+          <ScalarProperty Name="BookingTime" ColumnName="BookingTime" />
+          <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Cars">
       <EntityTypeMapping TypeName="SmartParkingModel.Car">
         <MappingFragment StoreEntitySet="Car">
-          <ScalarProperty Name="CarID" ColumnName="CarID" />
-          <ScalarProperty Name="CarType" ColumnName="CarType" />
-          <ScalarProperty Name="CarName" ColumnName="CarName" />
           <ScalarProperty Name="LicensePlate" ColumnName="LicensePlate" />
+          <ScalarProperty Name="CarName" ColumnName="CarName" />
+          <ScalarProperty Name="CarType" ColumnName="CarType" />
+          <ScalarProperty Name="CarID" ColumnName="CarID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CheckInOuts">
       <EntityTypeMapping TypeName="SmartParkingModel.CheckInOut">
         <MappingFragment StoreEntitySet="CheckInOut">
-          <ScalarProperty Name="CheckInOutID" ColumnName="CheckInOutID" />
-          <ScalarProperty Name="CarID" ColumnName="CarID" />
-          <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
-          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
-          <ScalarProperty Name="CheckInTime" ColumnName="CheckInTime" />
-          <ScalarProperty Name="CheckOutTime" ColumnName="CheckOutTime" />
-          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
           <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TotalCost" ColumnName="TotalCost" />
+          <ScalarProperty Name="CheckOutTime" ColumnName="CheckOutTime" />
+          <ScalarProperty Name="CheckInTime" ColumnName="CheckInTime" />
+          <ScalarProperty Name="BookingID" ColumnName="BookingID" />
+          <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
+          <ScalarProperty Name="CarID" ColumnName="CarID" />
+          <ScalarProperty Name="CheckInOutID" ColumnName="CheckInOutID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ParkingSpaces">
       <EntityTypeMapping TypeName="SmartParkingModel.ParkingSpace">
         <MappingFragment StoreEntitySet="ParkingSpace">
-          <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
-          <ScalarProperty Name="SpaceNumber" ColumnName="SpaceNumber" />
           <ScalarProperty Name="Availability" ColumnName="Availability" />
+          <ScalarProperty Name="SpaceNumber" ColumnName="SpaceNumber" />
+          <ScalarProperty Name="SpaceID" ColumnName="SpaceID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Roles">
       <EntityTypeMapping TypeName="SmartParkingModel.Role">
         <MappingFragment StoreEntitySet="Role">
-          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
           <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleID" ColumnName="RoleID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="SmartParkingModel.User">
         <MappingFragment StoreEntitySet="Users">
-          <ScalarProperty Name="UserID" ColumnName="UserID" />
-          <ScalarProperty Name="Username" ColumnName="Username" />
-          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="RoleID" ColumnName="RoleID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -71,6 +71,7 @@
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -88,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\fAddNewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fAddNewUser.Designer.cs">
+      <DependentUpon>fAddNewUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fAdminManager.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,17 +107,29 @@
     <Compile Include="GUI\fBooking.Designer.cs">
       <DependentUpon>fBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\fCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fCustomer.Designer.cs">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\fEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fEditUser.Designer.cs">
+      <DependentUpon>fEditUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fInputCardID.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\fInputCardID.Designer.cs">
       <DependentUpon>fInputCardID.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\fParkingSpace.cs">
+    <Compile Include="GUI\Form_Alert.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\fParkingSpace.Designer.cs">
-      <DependentUpon>fParkingSpace.cs</DependentUpon>
+    <Compile Include="GUI\Form_Alert.Designer.cs">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
@@ -123,6 +142,36 @@
     </Compile>
     <Compile Include="GUI\fManagerCheckInOut.Designer.cs">
       <DependentUpon>fManagerCheckInOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_BookingHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_BookingHistory.Designer.cs">
+      <DependentUpon>UC_BookingHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_Customer.Designer.cs">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_Dashboard.Designer.cs">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_Employee.Designer.cs">
+      <DependentUpon>UC_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_ParkingSpace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\UserControls\UC_ParkingSpace.Designer.cs">
+      <DependentUpon>UC_ParkingSpace.cs</DependentUpon>
     </Compile>
     <Compile Include="HandleLicensePlate\FindTextLicensePlate.cs" />
     <Compile Include="HandleLicensePlate\FindContours.cs" />
@@ -175,17 +224,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\fAddNewUser.resx">
+      <DependentUpon>fAddNewUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\fAdminManager.resx">
       <DependentUpon>fAdminManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fBooking.resx">
       <DependentUpon>fBooking.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fCustomer.resx">
+      <DependentUpon>fCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fEditUser.resx">
+      <DependentUpon>fEditUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\fInputCardID.resx">
       <DependentUpon>fInputCardID.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\fParkingSpace.resx">
-      <DependentUpon>fParkingSpace.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\Form_Alert.resx">
+      <DependentUpon>Form_Alert.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
@@ -195,6 +253,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fDetailCheckInOut.resx">
       <DependentUpon>fDetailCheckInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControls\UC_BookingHistory.resx">
+      <DependentUpon>UC_BookingHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControls\UC_Customer.resx">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControls\UC_Dashboard.resx">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControls\UC_Employee.resx">
+      <DependentUpon>UC_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\UserControls\UC_ParkingSpace.resx">
+      <DependentUpon>UC_ParkingSpace.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -260,6 +333,18 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\checkmark.png" />
+    <None Include="Resources\average.png" />
+    <None Include="Resources\revenue.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\icons8_cancel_25px.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\success.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\pencil.png" />
+    <None Include="Resources\profile.png" />
+    <None Include="Resources\tb.png" />
     <None Include="Resources\checkIconMINI.png" />
     <None Include="Resources\closeIcon.png" />
     <None Include="Resources\checkIcon.png" />

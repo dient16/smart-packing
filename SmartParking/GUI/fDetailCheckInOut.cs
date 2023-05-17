@@ -20,11 +20,11 @@ namespace SmartParking.Model
         private void LoadData()
         {
             var List = HandleDataDB.Ins.GetListCheckInOut();
-            Grid_CheckInOut.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            Grid_CheckInOut.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            Grid_Users.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            Grid_Users.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             foreach (var item in List)
             {
-                Grid_CheckInOut.Rows.Add(item.CardID, item.LicensePlate, item.SpaceName, item.CheckInTime, item.CheckOUTTime, item.TotalCost, item.Status);
+                Grid_Users.Rows.Add(item.CardID, item.LicensePlate, item.SpaceName, item.CheckInTime, item.CheckOUTTime, item.TotalCost, item.Status);
             }
             
         }
